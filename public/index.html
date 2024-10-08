@@ -9,11 +9,198 @@
 
 	<!-- Custom css -->
 	<link rel="stylesheet" href="css/style.css"/>
+	<!-- Font css -->
+	<link href="https://fonts.googleapis.com/css2?family=Bio+Sans:wght@400;700&display=swap" rel="stylesheet">
+
 
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="css/bootstrap.min.css"/>
 	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </head>
 <body>
+
+    <header class="bg-primary text-white">
+        <div class="container d-flex justify-content-between align-items-center py-3">
+            <img src="./images/logoblanco.svg" alt="Logo" class="logo">
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#inicio">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#buscar">BUSCAR PROPIEDADES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#oficinas">OFICINAS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#asesores">ASESORES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#contacto">CONTACTANOS</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+	
+	<section class="banner">
+		<div class="container text-center">
+			<h1 class="banner-title">Encuentra el lugar ideal</h1>
+		</div>
+	</section>
+
+	<section class="ultimas-propiedades my-5">
+		<div class="container text-center">
+			<h2 class="section-title">Últimas propiedades</h2>
+			<div class="line"></div>
+			<div class="row mt-4">
+				<!-- Card 1 -->
+				<div class="col-md-3">
+					<div class="card">
+						<img src="./images/tacna-inmueble.png" class="card-img-top rounded-top" alt="Propiedad 1">
+						<div class="card-body">
+							<div class="id-property " >
+								ID: 202020
+							</div>
+							<p class="price " style="color: #004473;">S/ 3'366,000.00 - USD 900,000.00</p>
+							<p class="location"><i class="fas fa-map-marker-alt"></i> Tacna, Tacna</p>
+							<hr class="separator">
+							<div class="area">
+								<span>Área de terreno: 200 m²</span><br>
+								<span>Área construida: 150 m²</span>
+							</div>
+							<button class="btn btn-primary mt-3">Conocer</button>
+							<div class="advisor mt-2">
+								<img src="./images/asesor1.png" class="advisor-img" alt="Asesor">
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Repite la estructura para las demás cards -->
+				<!-- Card 2 -->
+				<div class="col-md-3">
+					<div class="card">
+						<img src="./images/tacna-inmueble.png" class="card-img-top rounded-top" alt="Propiedad 2">
+						<div class="card-body">
+							<div class="id-property">
+								ID: 202021
+							</div>
+							<p class="price">S/ 2'500,000.00 - USD 700,000.00</p>
+							<p class="location"><i class="fas fa-map-marker-alt"></i> Arequipa, Arequipa</p>
+							<hr class="separator">
+							<div class="area">
+								<span>Área de terreno: 180 m²</span><br>
+								<span>Área construida: 120 m²</span>
+							</div>
+							<button class="btn btn-primary mt-3">Conocer</button>
+							<div class="advisor mt-2">
+								<img src="./images/asesor1.png" class="advisor-img" alt="Asesor">
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Card 3 -->
+				<div class="col-md-3">
+					<div class="card">
+						<img src="./images/tacna-inmueble.png" class="card-img-top rounded-top" alt="Propiedad 3">
+						<div class="card-body">
+							<div class="id-property">
+								ID: 202022
+							</div>
+							<p class="price">S/ 4'200,000.00 - USD 1,200,000.00</p>
+							<p class="location"><i class="fas fa-map-marker-alt"></i> Lima, Lima</p>
+							<hr class="separator">
+							<div class="area">
+								<span>Área de terreno: 250 m²</span><br>
+								<span>Área construida: 200 m²</span>
+							</div>
+							<button class="btn btn-primary mt-3">Conocer</button>
+							<div class="advisor mt-2">
+								<img src="./images/asesor1.png" class="advisor-img" alt="Asesor">
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Card 4 -->
+				<div class="col-md-3">
+					<div class="card">
+						<img src="./images/tacna-inmueble.png" class="card-img-top rounded-top" alt="Propiedad 4">
+						<div class="card-body">
+							<div class="id-property">
+								ID: 202023
+							</div>
+							<p class="price">S/ 3'000,000.00 - USD 850,000.00</p>
+							<p class="location"><i class="fas fa-map-marker-alt"></i> Cusco, Cusco</p>
+							<hr class="separator">
+							<div class="area">
+								<span>Área de terreno: 220 m²</span><br>
+								<span>Área construida: 175 m²</span>
+							</div>
+							<button class="btn btn-primary mt-3">Conocer</button>
+							<div class="advisor mt-2">
+								<img src="./images/asesor1.png" class="advisor-img" alt="Asesor">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="encuentra-tu-lugar" style="background-image: url('./images/Banner2.png');">
+		<div class="overlay d-flex flex-column justify-content-end" style="max-width: 450px; max-height: 300px; border-radius: 10px; margin-left: 25px;">
+			<div class="container text-white">
+				<h2 class="titulo">ENCUENTRA TU LUGAR IDEAL</h2>
+				<p class="subtitulo">Más de 3,084 Asesores calificados para tu búsqueda.</p>
+				<button class="btnye mt-3">Contactanos</button>
+			</div>
+		</div>
+	</section>
+
+	<section class="encuentra-tu-lugar" style="background-image: url('./images/postula.png');">
+		<div class="overlay d-flex flex-column justify-content-end" style="max-width: 450px; max-height: 300px; border-radius: 10px; margin-left: 25px;">
+			<div class="container text-white">
+				<h2 class="titulo">NUESTRAS OFICINAS EN TODO EL PERÚ</h2>
+				<p class="subtitulo">Estamos cerca de ti, busca nuestras oficinas</p>
+				<button class="btnye mt-3">Buscar Oficina</button>
+			</div>
+		</div>
+	</section>
+
+	<section class="footer-links" style="background-color: #666666; padding: 40px 0;">
+		<div class="container">
+			<div class="row">
+				<!-- Primera columna -->
+				<div class="col-md-4 text-white" >
+					<h5>NOSOTROS</h5>
+					<ul class="list-unstyled">
+						<li><a href="#" class="text-white sr">ADQUIERE UNA FRANQUICIA</a></li>
+						<li><a href="#" class="text-white sr">OFICINAS</a></li>
+						<li><a href="#" class="text-white sr">CONTACTANOS</a></li>
+						<li><a href="#" class="text-white sr">SÉ UN ASESOR</a></li>
+					</ul>
+				</div>
+				<!-- Segunda columna -->
+				<div class="col-md-4 text-white">
+					<h5>BUSCAR UN ASESOR</h5>
+					<ul class="list-unstyled">
+						<li><a href="#" class="text-white sr">PROPIEDADES RECIENTES</a></li>
+						<li><a href="#" class="text-white sr">BAJARON UN PRECIO</a></li>
+						<li><a href="#" class="text-white sr">POLITICAS DE PRIVACIDAD</a></li>
+					</ul>
+				</div>
+				<!-- Tercera columna -->
+				<div class="col-md-4 text-white">
+					<h5>INFORMES</h5>
+					<p>Teléfono: +51988754654</p>
+					<p>Email: contacto@eligedonde.com</p>
+				</div>
+			</div>
+		</div>
+	</section>
 </body>
