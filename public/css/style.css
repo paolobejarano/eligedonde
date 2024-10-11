@@ -175,14 +175,14 @@ color: white;
   max-width: 450px; 
   max-height: 300px; 
   border-radius: 20px !important; 
-  margin-left: 25px;
+  margin-left: 10%;
 }
 
 @media (max-width: 767px) {
   .square {
-      width: 100%; /* Ancho completo en pantallas pequeñas */
+      width: 100%; 
       margin-left: 25px;
-      border-radius: 20; /* Opcional: quitar bordes redondeados */
+      border-radius: 20; 
   }
 }
 
@@ -229,7 +229,7 @@ color: white;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 68, 115, 0.6); /* Color #004473 con 60% de transparencia */
-  padding: 20px; /* Espaciado interno */
+  padding: 40px; /* Espaciado interno */
 }
 
 .titulo {
@@ -242,13 +242,12 @@ color: white;
 }
 
 .btnye {
-  color: #fff !important;
-  background-color: #ffa00a; /* Botón blanco */
-  color: #004473; /* Texto del botón en color #004473 */
-  border: none; /* Sin borde */
+  color: #fff ;
+  background-color: #ffa00a; 
+  border: none; 
   border-radius: 20px;
-  width: fit-content; /* Ajusta el ancho del botón al contenido */
-  padding: 10px 20px; /* Ajusta el padding según sea necesario */
+  padding: 10px 20px;
+  display: block;
   
 
 }
@@ -298,9 +297,67 @@ ul {
   padding: 20px;
   display: flex;
   justify-content: space-between; /* Espacio entre columnas */
+  margin: auto;
 }
 
 .column {
   flex: 1; /* Cada columna toma el mismo espacio */
   margin: 0 10px; /* Espaciado horizontal entre columnas */
+}
+
+
+/* Buscar propiedades */
+
+.main-image {
+  width: 100%;
+  height: auto;
+}
+.thumbnail {
+  width: 100%;
+  height: auto;
+}
+.tipo{
+  padding: 5px;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+  background-color: #ffa00a;  /* Aquí aplicas el color del borde */
+  width: 100px;
+}
+.nroid{
+  padding: 5px;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+  background-color: #004473;  /* Aquí aplicas el color del borde */
+  width: 100px;
+}
+
+.tit {
+  font-size: 1.2rem;
+  text-align: start;
+  color: #03669c;
+  font-weight: 600;
+}
+.price2 {
+  font-size: 1.2rem;
+  text-align: start;
+  color: #ffa00a;
+  font-weight: 600;
+}
+.btnaz {
+  color: #fff ;
+  background-color: #2ecc71; 
+  border: none; 
+  border-radius: 20px;
+  padding: 10px 20px;
+  display: block;
+  
+}
+
+.contacto{
+  border: 2px solid #ffa00a;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 10px;
 }
