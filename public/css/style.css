@@ -122,6 +122,7 @@ color: white;
   transition: all 0.3s ease-in-out; /* Animación de suavidad */
 }
 
+
 .card:hover {
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Sombra más intensa al pasar el mouse */
 }
@@ -197,6 +198,16 @@ color: white;
 .advisor-img {
   width: 70px; /* Tamaño del círculo del asesor */
   height: 70px;
+  border-radius: 50%; /* Círculo */
+  object-fit: fill; /* Para que la imagen ajuste bien */
+  box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.3); /* Sombra suave */
+  border-radius: 50%; /* Asegurar que la imagen sea circular */
+  transition: all 0.3s ease-in-out;
+}
+
+.advisor1-img {
+  width:150px;
+  height: 150px;
   border-radius: 50%; /* Círculo */
   object-fit: fill; /* Para que la imagen ajuste bien */
   box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.3); /* Sombra suave */
@@ -322,7 +333,7 @@ ul {
   color: white;
   border-radius: 10px;
   background-color: #ffa00a;  /* Aquí aplicas el color del borde */
-  width: 100px;
+  margin-right: 10px;
 }
 .nroid{
   padding: 5px;
@@ -360,4 +371,46 @@ ul {
   border-radius: 20px;
   padding: 20px;
   margin: 10px;
+}
+
+.message{
+  display: none;
+}
+
+.cardasesor {
+  margin: 20px;
+  border: #999999;
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  transition: all 0.3s ease-in-out; /* Animación de suavidad */
+  padding: 20px;
+}
+
+.btnaz {
+  color: #fff ;
+  background-color: #002d4d; 
+  border: none; 
+  border-radius: 20px;
+  padding: 10px 20px;
+  display: block;
+  
+}
+
+/* Conoce el inmueble*/
+.selected-line {
+  height: 4px;
+  background-color: #ffa00a; /* Color amarillo */
+  width: 100%;
+  display: none; /* Oculto por defecto */
+}
+
+.nav-link{
+  background-color: transparent;
+  color: #999 !important;
+  border-top: none;
+  border
+
+}
+.navlink.active {
+  border-bottom: 4px solid #ffa00a; /* Línea amarilla debajo del elemento activo */
 }

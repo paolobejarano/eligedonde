@@ -148,119 +148,173 @@
 	<!-- Ubicacion -->
     <section>
         <div class="mx-auto" style="max-width: 1400px;">
-            <div class="col-lg-8">
-                <div class="d-flex">
-                    <div class="tipo">
-                        Casa Urbana en Venta
+            <div class="row"> <!-- Añadido: Contenedor de fila -->
+                <div class="col-lg-8 cont1" style="padding: 20px;"> 
+                    <div class="d-flex  align-items-center" >
+                        <div class="tipo" >Casa Urbana en Venta</div>
+                        <div class="nroid">ID:242533</div>
                     </div>
-                    <div class="nroid">
-                        ID:242533
-                    </div>
-                </div>
-                <p class="tit">Linda Casa frente al parque en Venta</p>
-                <p class="price2">S/ 3'366,000.00 - USD 900,000.00</p>
-                <p class="location"><i class="fas fa-map-marker-alt"></i> Av. Jose Abelardo Quiñones ALTOZANO, Tacna
-                    Heroica, Coronel Greg. Albarracin L.</p>
-        
-            <div style="position: relative; width: 100%; padding-top: 75%; /* 3:4 aspect ratio */">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.3674966144513!2d-76.93800892522714!3d-12.08697488815296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c724074f3b23%3A0xe1ece2ce18de8f31!2sSantiago%20De%20Compostela%20157%2C%20Lima%2015026!5e0!3m2!1ses-419!2spe!4v1728578284291!5m2!1ses-419!2spe"
-                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" allowfullscreen=""
-                    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            <div class="line"></div>
-            <div class="d-flex justify-content-center">
-                <div class="row mt-3 text-center">
-                    <img src="./images/Ruler.svg" alt="Terreno libre" class="icono-area" style="max-width: 55px !important">
-                    <p class="terr" style="display: block; color: #666666; font-weight: 600;">72m2 tot.</p>
-                </div>
-                <div class="row mt-3 text-center">
-                    <img src="./images/espac.svg" alt="Terreno libre" class="icono-area" style="max-width: 55px !important">
-                    <p class="terr" style="display: block; color: #666666; font-weight: 600;">72m2 tot.</p>
-                </div>
-                <div class="row mt-3 text-center">
-                    <i class="fa-solid fa-bath" style=" color: #666666;"></i>
-                    <p class="terr" style="display: block; color: #666666; font-weight: 600;">2 baños</p>
-                </div>
-                <div class="row mt-3 text-center">
-                    <img src="./images/bed.svg" alt="Terreno libre" class="icono-area"
-                        style="max-width: 55px !important; padding-right: 10px;">
-                    <p class="terr" style="display: block; color: #666666; font-weight: 600;">3 dormitorios</p>
-                </div>
-                <div class="row mt-3 text-center">
-                    <i class="fa-regular fa-calendar"
-                        style="max-width: 55px !important; padding-right: 10px; color: #666666;"></i>
-                    <p class="terr" style="display: block; color: #666666; font-weight: 600;">6 años</p>
-                </div>
+                    <p class="tit">Linda Casa frente al parque en Venta</p>
+                    <p class="price2">S/ 3'366,000.00 - USD 900,000.00</p>
+                    <p class="location"><i class="fas fa-map-marker-alt"></i> Av. Jose Abelardo Quiñones ALTOZANO, Tacna Heroica, Coronel Greg. Albarracin L.</p>
     
-            </div>
-            <div class="line"></div>
-            <p class="tit"> CONOCE ESTE INMUEBLE </p>
-            </div>
-            <div class="col-lg-4">
-                <div class="col-12 col-md-7">
-                    
-                    <div class="mt-4 contacto" >
-                        <h2 class="fw-semibold bio" style="max-width: 400px; color: #004473;">
-                            Contacta al anuciante </h2>
-                        <form class="consulta-box" id="contactForm" enctype="multipart/form-data" required>
-                            <div class="container-fluid px-0" style="color: #999;">
-                                <div class="row g-4 bio">
-                                    <div class="col-12">
-                                        <div class="form-floating">
-                                            <input type="email" class="form-control" id="email" name="email"
-                                                placeholder="Correo electrónico" required>
-                                            <label for="email">Email:</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-floating">
-                                            <input type="text" class="form-control" id="fullName" name="full_name"
-                                                placeholder="Nombre y Apellido" required>
-                                            <label for="fullName">Nombre</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-floating">
-                                            <input type="text" class="form-control" id="cellphoneNumber"
-                                                name="cellphone_number" placeholder="Celular" required>
-                                            <label for="cellphoneNumber">Telefono</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-floating">
-                                            <input type="text" class="form-control" id="documentId" name="document_id"
-                                                placeholder="DNI" required>
-                                            <label for="documentId">DNI</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-floating">
-                                            <textarea class="form-control" placeholder="Escribe aquí tus comentarios..."
-                                                id="comment" name="comment" style="height: 100px" required></textarea>
-                                            <label for="comment" class="form-label">Mensaje</label>
-                                        </div>
-                                    </div>
-                                    <div class="text-center">
-                                        <button type="submit" class="btnye  btn-lg rounded-pill px-5">
-                                            Contactar
-                                        </button>
-                                    </div>
-                                    <div class="text-center">
-                                        <button type="submit" class="btnaz btn-lg rounded-pill px-5">
-                                            Contactar por Whatsapp
-                                        </button>
+                    <div style="position: relative; width: 100%; padding-top: 75%; /* 3:4 aspect ratio */">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.3674966144513!2d-76.93800892522714!3d-12.08697488815296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c724074f3b23%3A0xe1ece2ce18de8f31!2sSantiago%20De%20Compostela%20157%2C%20Lima%2015026!5e0!3m2!1ses-419!2spe!4v1728578284291!5m2!1ses-419!2spe"
+                            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" allowfullscreen=""
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <hr class="separator">
+                    <div class="d-flex justify-content-center">
+                        <div class="row mt-3 text-center">
+                            <img src="./images/Ruler.svg" alt="Terreno libre" class="icono-area" style="max-width: 55px !important">
+                            <p class="terr" style="display: block; color: #666666; font-weight: 600;">72m2 tot.</p>
+                        </div>
+                        <div class="row mt-3 text-center">
+                            <img src="./images/espac.svg" alt="Terreno libre" class="icono-area" style="max-width: 55px !important">
+                            <p class="terr" style="display: block; color: #666666; font-weight: 600;">72m2 tot.</p>
+                        </div>
+                        <div class="row mt-3 text-center">
+                            <i class="fa-solid fa-bath" style=" color: #666666;"></i>
+                            <p class="terr" style="display: block; color: #666666; font-weight: 600;">2 baños</p>
+                        </div>
+                        <div class="row mt-3 text-center">
+                            <img src="./images/bed.svg" alt="Terreno libre" class="icono-area" style="max-width: 55px !important; padding-right: 10px;">
+                            <p class="terr" style="display: block; color: #666666; font-weight: 600;">3 dormitorios</p>
+                        </div>
+                        <div class="row mt-3 text-center">
+                            <i class="fa-regular fa-calendar" style="max-width: 55px !important; padding-right: 10px; color: #666666;"></i>
+                            <p class="terr" style="display: block; color: #666666; font-weight: 600;">6 años</p>
+                        </div>
+                    </div>
+                    <hr class="separator">
+                    <div class="container mt-4">
+                        <h2 class="text-center">CONOCE ESTE INMUEBLE</h2>
+                        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+               
+
+                                <div class="navbar-collapse" id="navbarNavAltMarkup">
+                                    <div class="navbar-nav">
+                                        <button class="nav-link active" onclick="selectOption('Caracteristicas generales')">Características generales</button>
+                                        <button class="nav-link" onclick="selectOption('Servicios')">Servicios</button>
+                                        <button class="nav-link" onclick="selectOption('Ambientes')">Ambientes</button>
+                                        <button class="nav-link" onclick="selectOption('Exteriores')">Exteriores</button>
                                     </div>
                                 </div>
                             </div>
-                        </form>
+                        </nav>
+                        <div id="selectedLine" class="selected-line"></div>
+                        <div id="details" class="mt-4 text-center"></div>
                     </div>
-                    <div class="message">
-                        <h4>Tu consulta ha sido enviada exitosamente. Nos pondremos en contacto contigo pronto.</h4>
+                </div>
+                
+                <div class="col-lg-4 cont2">
+                    <div class="col-lg-12 col-md-7 mx-auto">
+                        <div class="mt-4 contacto">
+                            <h2 class="fw-semibold bio" style="max-width: 400px; color: #004473;">Contacta al anunciante</h2>
+                            <form class="consulta-box" id="contactForm" enctype="multipart/form-data" required>
+                                <div class="container-fluid px-0" style="color: #999;">
+                                    <div class="row g-3 bio">
+                                        <div class="col-12">
+                                            <div class="form-floating">
+                                                <input type="email" class="form-control" id="email" name="email" placeholder="Correo electrónico" required>
+                                                <label for="email">Email</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control" id="fullName" name="full_name" placeholder="Nombre y Apellido" required>
+                                                <label for="fullName">Nombre</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control" id="cellphoneNumber" name="cellphone_number" placeholder="Celular" required>
+                                                <label for="cellphoneNumber">Telefono</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control" id="documentId" name="document_id" placeholder="DNI" required>
+                                                <label for="documentId">DNI</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-floating">
+                                                <textarea class="form-control" placeholder="Escribe aquí tus comentarios..." id="comment" name="comment" style="height: 100px" required></textarea>
+                                                <label for="comment" class="form-label">Mensaje</label>
+                                            </div>
+                                        </div>
+                                        <div class="text-center">
+                                            <button type="submit" class="btnye btn-lg px-5 w-100">Contactar</button>
+                                        </div>
+                                        <div class="text-center">
+                                            <button type="submit" class="btnaz btn-lg px-5 w-100">Contactar por Whatsapp</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="message">
+                            <h4>Tu consulta ha sido enviada exitosamente. Nos pondremos en contacto contigo pronto.</h4>
+                        </div>
+                    </div>
+    
+                    <!-- asesor -->
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-12 mx-auto">
+                        <div class="cardasesor bio">
+                            <div class="card-body">
+                                <h3 class="text-center fw-semibold" style="color: #004473;">CONTACTA AL ASESOR</h3>
+                                <div class="advisor mt-2 w-100">
+                                    <img src="./images/asesor1.png" class="advisor1-img" alt="Asesor">
+                                </div>
+                                <p class="text-center larger mt-2 mx-auto " style="color: #03669c; max-width: 200px; font-weight: 700;">María Nicolle Sanchéz Bocanegra</p>
+                                <p class="text-center font-weight-light" style="color: #999;">nicollesb@eligedonde.com</p>
+                                <p class="text-center larger mt-2 mx-auto " style="color: #03669c; max-width: 200px;">
+                                    <span class="fw-semibold">Celular:</span> 9823665090
+                                </p>
+                                <div class="advisor mt-2 w-100" >
+                                    <img src="./images/cel.svg" class="ico" alt="celular" style="padding-left: 10px;">
+                                    <img src="./images/Whatsapp.svg" class="ico" alt="Whatsapp" style="padding-left: 10px;">
+                                    <img src="./images/Email.svg" class="ico" alt="Email" style="padding-left: 10px;">
+                                </div>
+    
+                                <button class="btnaz mt-3 w-100">Propiedad del asesor</button>
+
+                            </div>
+                        </div>
+                        <div class="py-4"></div>
                     </div>
                 </div>
             </div>
         </div>
+        <script>
+            function selectOption(option) {
+            const details = {
+                "Caracteristicas generales": "Terraza, Seguridad, Caseta de Guardia",
+                "Servicios": "Luz, Agua",
+                "Ambientes": "Dormitorio, Baño, Cocina",
+                "Exteriores": "Cochera, Patio"
+            };
+
+            // Mostrar línea seleccionada
+            const line = document.getElementById('selectedLine');
+            line.style.display = 'block';
+
+            // Actualizar el texto de detalles
+            const detailsDiv = document.getElementById('details');
+            detailsDiv.innerHTML = `<h4>${option}</h4><p>${details[option]}</p>`;
+
+            // Actualizar la clase activa
+            const links = document.querySelectorAll('.nav-link');
+            links.forEach(link => {
+                link.classList.remove('active');
+            });
+            
+            // Establecer la clase activa en el botón seleccionado
+            const activeLink = Array.from(links).find(link => link.textContent === option);
+            activeLink.classList.add('active');
+        }
+        </script>
     </section>
 
 	<!-- Foooter -->
