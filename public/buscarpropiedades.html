@@ -9,26 +9,21 @@
 
 	<!-- Custom css -->
 	<link rel="stylesheet" href="css/style.css"/>
-	<!-- Font css -->
-	<link href="https://fonts.googleapis.com/css2?family=Bio+Sans&display=swap" rel="stylesheet">
+    <!-- Font css -->
+    <link href="https://fonts.googleapis.com/css2?family=Bio+Sans&display=swap" rel="stylesheet">
+    <!-- Bootstrap 5 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap 5 JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-
-	<!-- Bootstrap -->
-	<link rel="stylesheet" href="css/bootstrap.min.css"/>
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script>
-        function changeImage(src) {
-            // Cambia la fuente de la imagen grande
-            document.getElementById('mainImage').src = src;
-        }
-    </script>
 </head>
 <body>
 
-	<header class="bg-primary text-white bio " >
+	<header class="text-white bio " style="background-color: #004473;" >
         <div class="container d-flex justify-content-between align-items-center py-3 mx-auto" style="max-width: 1400px;">
             <img src="./images/logoblanco.svg" alt="Logo" class="logo">
             
@@ -60,14 +55,18 @@
         </div>
     </header>
 
-    <!-- Modal -->
+    <!-- Modal menu -->
     <div class="modal " id="menuModal" tabindex="-1" aria-labelledby="menuModalLabel" aria-hidden="true" >
-        <div class="modal-dialog ">
-            <div class="modal-content ">
-                <div class="modal-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-dialog modal-fullscreen bio ">
+            <div class="modal-content  " style="padding: 20px; background: rgb(17,3,55);
+            background: -moz-linear-gradient(0deg, rgba(17,3,55,0.7931547619047619) 0%, rgba(255,255,255,1) 0%, rgba(163,199,219,1) 5%, rgba(3,102,156,1) 13%, rgba(3,102,156,1) 24%, rgba(0,68,115,1) 52%, rgba(0,68,115,1) 98%);
+            background: -webkit-linear-gradient(0deg, rgba(17,3,55,0.7931547619047619) 0%, rgba(255,255,255,1) 0%, rgba(163,199,219,1) 5%, rgba(3,102,156,1) 13%, rgba(3,102,156,1) 24%, rgba(0,68,115,1) 52%, rgba(0,68,115,1) 98%);
+            background: linear-gradient(0deg, rgba(17,3,55,0.7931547619047619) 0%, rgba(255,255,255,1) 0%, rgba(163,199,219,1) 5%, rgba(3,102,156,1) 13%, rgba(3,102,156,1) 24%, rgba(0,68,115,1) 52%, rgba(0,68,115,1) 98%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr= #110337,endColorstr=#004473,GradientType=1); "  >
+                <div class="modal-header justify-content-end" style="border-bottom-color: transparent; background-color: #004473 ">
+                    <div type="button" class=" text-white "  data-bs-dismiss="modal" aria-label="Close"> X </div>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body menumod " style="margin-top: 20%;">
                     <ul class="list-unstyled text-white">
                         <li><a class="nav-link text-white" href="#inicio">INICIO</a></li>
                         <hr class="my-2"> <!-- Línea separadora -->
@@ -79,10 +78,12 @@
                         <hr class="my-2">
                         <li><a class="nav-link text-white" href="#contacto">CONTACTANOS</a></li>
                     </ul>
+
+                    <div class="modimagen" style="border-top-color: transparent;">
+                        <img src="./images/logoblanco.svg" alt="Logo" class="logo" style="width: 100px;"> <!-- Ajusta el tamaño según necesites -->
+                    </div>
                 </div>
-                <div class="modal-footer">
-                    <img src="./images/logoblanco.svg" alt="Logo" class="logo" style="width: 100px;"> <!-- Ajusta el tamaño según necesites -->
-                </div>
+                
             </div>
         </div>
     </div>
@@ -98,23 +99,58 @@
                 <div class="col-lg-6">
                     <div class="row">
                         <div class="col-6 mb-2">
-                            <img src="./images/tacna-inmueble2.png" alt="Miniatura 1" class="thumbnail" onclick="changeImage('./images/tacna-inmueble2.png')">
+                            <img src="./images/tacna-inmueble2.png" alt="Miniatura 1" class="thumbnail" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="setModalImage('./images/tacna-inmueble2.png')">
                         </div>
                         <div class="col-6 mb-2">
-                            <img src="./images/tacna-inmueble3.png" alt="Miniatura 2" class="thumbnail" onclick="changeImage('./images/tacna-inmueble3.png')">
+                            <img src="./images/tacna-inmueble3.png" alt="Miniatura 2" class="thumbnail" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="setModalImage('./images/tacna-inmueble3.png')">
                         </div>
-                        <div class="col-6 mb-2">
-                            <img src="./images/tacna-inmueble4.png" alt="Miniatura 3" class="thumbnail" onclick="changeImage('./images/tacna-inmueble4.png')">
+                        <div class="col-6 mb-2 d-lg-block d-md-none">
+                            <img src="./images/tacna-inmueble4.png" alt="Miniatura 3" class="thumbnail" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="setModalImage('./images/tacna-inmueble4.png')">
                         </div>
-                        <div class="col-6 mb-2">
-                            <img src="./images/tacna-inmueble5.png" alt="Miniatura 4" class="thumbnail" onclick="changeImage('./images/tacna-inmueble5.png')">
+                        <div class="col-6 mb-2 d-lg-block d-md-none">
+                            <img src="./images/tacna-inmueble5.png" alt="Miniatura 4" class="thumbnail" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="setModalImage('./images/tacna-inmueble5.png')">
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- Modal fotos-->
+            <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+                <div class="modal-dialog modal-fullscreen">
+                    <div class="modal-content align-items-center" style="background-color: transparent;"> 
+                        <div class="modal-header text-white justify-content-end" style="border-bottom-color: transparent"> 
+                            <div type="button"  data-bs-dismiss="modal" aria-label="Close">X</div>
+                        </div>
+                        <div class="modal-body">
+                            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <!-- Aquí deben ir los elementos del carrusel, por ejemplo, las imágenes -->
+                                    <div class="carousel-item active">
+                                        <img src="image1.jpg" class="d-block w-100" alt="Imagen 1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="image2.jpg" class="d-block w-100" alt="Imagen 2">
+                                    </div>
+                                    <!-- Añadir más elementos si es necesario -->
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            
         </div>
 
-        <div id="carouselExample" class="carousel slide d-md-none" data-ride="carousel">
+        <div id="carouselExample" class="carousel slide d-md-none" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="./images/tacna-inmueble1.png" class="d-block w-100" alt="foto1">
@@ -132,11 +168,11 @@
                     <img src="./images/tacna-inmueble5.png" class="d-block w-100" alt="foto5">
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-target="#carouselExample" data-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-target="#carouselExample" data-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
@@ -147,7 +183,7 @@
 
 	<!-- Ubicacion -->
     <section>
-        <div class="mx-auto" style="max-width: 1400px;">
+        <div class="mx-auto" style="max-width: 1400px; padding: 10px;">
             <div class="row"> <!-- Añadido: Contenedor de fila -->
                 <div class="col-lg-8 cont1" style="padding: 20px;"> 
                     <div class="d-flex  align-items-center" >
@@ -158,49 +194,61 @@
                     <p class="price2">S/ 3'366,000.00 - USD 900,000.00</p>
                     <p class="location"><i class="fas fa-map-marker-alt"></i> Av. Jose Abelardo Quiñones ALTOZANO, Tacna Heroica, Coronel Greg. Albarracin L.</p>
     
-                    <div style="position: relative; width: 100%; padding-top: 75%; /* 3:4 aspect ratio */">
+                    <div style="position: relative; width: 100%; padding-top: 37.5%; /* 2:1 aspect ratio reduced */">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.3674966144513!2d-76.93800892522714!3d-12.08697488815296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c724074f3b23%3A0xe1ece2ce18de8f31!2sSantiago%20De%20Compostela%20157%2C%20Lima%2015026!5e0!3m2!1ses-419!2spe!4v1728578284291!5m2!1ses-419!2spe"
                             style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" allowfullscreen=""
                             loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                     <hr class="separator">
-                    <div class="d-flex justify-content-center">
-                        <div class="row mt-3 text-center">
-                            <img src="./images/Ruler.svg" alt="Terreno libre" class="icono-area" style="max-width: 55px !important">
+                    <div class="d-flex justify-content-center " style="flex-wrap: wrap;">
+                        <div class="row mt-3 text-center justify-content-center">
+                            <img src="./images/Ruler.svg" alt="Terreno libre" class="icono-area mb-3" style="max-width: 55px !important">
                             <p class="terr" style="display: block; color: #666666; font-weight: 600;">72m2 tot.</p>
                         </div>
-                        <div class="row mt-3 text-center">
-                            <img src="./images/espac.svg" alt="Terreno libre" class="icono-area" style="max-width: 55px !important">
+                        <div class="row mt-3 justify-content-center text-center">
+                            <img src="./images/espac.svg" alt="Terreno libre" class="icono-area mb-3" style="max-width: 55px !important">
                             <p class="terr" style="display: block; color: #666666; font-weight: 600;">72m2 tot.</p>
                         </div>
-                        <div class="row mt-3 text-center">
-                            <i class="fa-solid fa-bath" style=" color: #666666;"></i>
+                        <div class="row mt-3 justify-content-center text-center">
+                            <img src="./images/Bathtub.svg" alt="Terreno libre" class="icono-area mb-3" style="max-width: 55px !important">
                             <p class="terr" style="display: block; color: #666666; font-weight: 600;">2 baños</p>
                         </div>
-                        <div class="row mt-3 text-center">
-                            <img src="./images/bed.svg" alt="Terreno libre" class="icono-area" style="max-width: 55px !important; padding-right: 10px;">
+                        <div class="row mt-3 justify-content-center text-center">
+                            <img src="./images/bed.svg" alt="Terreno libre" class="icono-area mb-3" style="max-width: 55px !important; padding-right: 10px;">
                             <p class="terr" style="display: block; color: #666666; font-weight: 600;">3 dormitorios</p>
                         </div>
-                        <div class="row mt-3 text-center">
-                            <i class="fa-regular fa-calendar" style="max-width: 55px !important; padding-right: 10px; color: #666666;"></i>
+                        <div class="row mt-3 justify-content-center text-center">
+                            <img src="./images/Calendar.svg" alt="Terreno libre" class="icono-area mb-3" style="max-width: 55px !important">
                             <p class="terr" style="display: block; color: #666666; font-weight: 600;">6 años</p>
                         </div>
                     </div>
                     <hr class="separator">
-                    <div class="container mt-4">
-                        <h2 class="text-center">CONOCE ESTE INMUEBLE</h2>
-                        <nav class="nav nav-pills justify-content-center mb-4">
-                            <button class="navlink active" onclick="selectOption('Caracteristicas generales')">Características generales</button>
-                            <button class="navlink" onclick="selectOption('Servicios')">Servicios</button>
-                            <button class="navlink" onclick="selectOption('Ambientes')">Ambientes</button>
-                            <button class="navlink" onclick="selectOption('Exteriores')">Exteriores</button>
-                        </nav>
-                        <div id="selectedLine" class="selected-line"></div>
-                        <div id="details" class="mt-4 text-center"></div>
-                    </div>
+                    <section>
+                        <div class="container mt-4 bio">
+                            <h2 class="text-center">CONOCE ESTE INMUEBLE</h2>
+                            <nav class="nav nav-pills flex-nowrap overflow-auto">
+                                <button class="btncon nav-link active" onclick="selectOption('Caracteristicas generales')"> 
+                                    <img src="./images/Document.svg" alt="documento">
+                                    Características generales</button>
+                                <button class="btncon nav-link" onclick="selectOption('Servicios')">
+                                    <img src="./images/foco.svg" alt="foco">Servicios</button>
+                                <button class="btncon nav-link" onclick="selectOption('Ambientes')">
+                                    <img src="./images/Door.svg" alt="door">Ambientes</button>
+                                <button class="btncon nav-link" onclick="selectOption('Exteriores')">
+                                    <img src="./images/Tree.svg" alt="tree">Exteriores</button>
+                            </nav>
+                            <div id="selectedLine" class="selected-line"></div>
+                            <div id="details" class="mt-4 text-center" style="color: #666666; font-size: small;"></div>
+                            <div class="text-center mt-4">
+                                <a href="ruta/a/tu/ficha-tecnica.pdf" class="btnaz1" download>
+                                    Descargar Ficha Técnica
+                                </a>
+                            </div>
+                        </div>
+                    </section>
                 </div>
                 
-                <div class="col-lg-4 cont2">
+                <div class="col-lg-4 cont2 bio">
                     <div class="col-lg-12 col-md-7 mx-auto">
                         <div class="mt-4 contacto">
                             <h2 class="fw-semibold bio" style="max-width: 400px; color: #004473;">Contacta al anunciante</h2>
@@ -281,31 +329,57 @@
             </div>
         </div>
         <script>
-            function selectOption(option) {
-            const details = {
-                "Caracteristicas generales": "Terraza, Seguridad, Caseta de Guardia",
-                "Servicios": "Luz, Agua",
-                "Ambientes": "Dormitorio, Baño, Cocina",
-                "Exteriores": "Cochera, Patio"
-            };
+          function selectOption(option) {
+                const details = {
+                    "Caracteristicas generales": ["Terraza", "Seguridad", "Caseta de Guardia"],
+                    "Servicios": ["Luz", "Agua"],
+                    "Ambientes": ["Dormitorio", "Baño", "Cocina"],
+                    "Exteriores": ["Cochera", "Patio"]
+                };
 
-            // Mostrar línea seleccionada
-            const line = document.getElementById('selectedLine');
-            line.style.display = 'block';
+                // Mostrar línea seleccionada
+                const line = document.getElementById('selectedLine');
+                line.style.display = 'block';
 
-            // Actualizar el texto de detalles
-            const detailsDiv = document.getElementById('details');
-            detailsDiv.innerHTML = `<h4>${option}</h4><p>${details[option]}</p>`;
+                // Actualizar el texto de detalles
+                const detailsDiv = document.getElementById('details');
+                detailsDiv.innerHTML = `<ul>${details[option].map(item => `<li>${item}</li>`).join('')}</ul>`;
 
-            // Actualizar la clase activa
-            const links = document.querySelectorAll('.nav-link');
-            links.forEach(link => {
-                link.classList.remove('active');
-            });
+                // Actualizar la clase activa
+                const links = document.querySelectorAll('.nav-link');
+                links.forEach(link => {
+                    link.classList.remove('active');
+                });
+                
+                // Establecer la clase activa en el botón seleccionado
+                const activeLink = Array.from(links).find(link => link.textContent.trim() === option);
+                if (activeLink) {
+                    activeLink.classList.add('active');
+                }
+            }
+
+            function setModalImage(src) {
+            const modalBody = document.querySelector('#imageModal .carousel-inner');
             
-            // Establecer la clase activa en el botón seleccionado
-            const activeLink = Array.from(links).find(link => link.textContent === option);
-            activeLink.classList.add('active');
+            // Limpiar los elementos existentes en el carrusel
+            modalBody.innerHTML = '';
+
+            // Lista de imágenes
+            const images = [
+                './images/tacna-inmueble1.png',
+                './images/tacna-inmueble2.png',
+                './images/tacna-inmueble3.png',
+                './images/tacna-inmueble4.png',
+                './images/tacna-inmueble5.png'
+            ];
+
+            // Agregar las imágenes al carrusel
+            images.forEach((image, index) => {
+                const item = document.createElement('div');
+                item.className = `carousel-item ${index === 0 ? 'active' : ''}`;
+                item.innerHTML = `<img src="${image}" class="d-block w-100" alt="Imagen ${index + 1}">`;
+                modalBody.appendChild(item);
+            });
         }
         </script>
     </section>

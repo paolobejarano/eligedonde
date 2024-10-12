@@ -57,32 +57,39 @@
         </div>
     </header>
 
-    <!-- Modal -->
-    <div class="modal " id="menuModal" tabindex="-1" aria-labelledby="menuModalLabel" aria-hidden="true" >
-        <div class="modal-dialog ">
-            <div class="modal-content ">
-                <div class="modal-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <ul class="list-unstyled text-white">
-                        <li><a class="nav-link text-white" href="#inicio">INICIO</a></li>
-                        <hr class="my-2"> <!-- Línea separadora -->
-                        <li><a class="nav-link text-white" href="#buscar">BUSCAR PROPIEDADES</a></li>
-                        <hr class="my-2">
-                        <li><a class="nav-link text-white" href="#oficinas">OFICINAS</a></li>
-                        <hr class="my-2">
-                        <li><a class="nav-link text-white" href="#asesores">ASESORES</a></li>
-                        <hr class="my-2">
-                        <li><a class="nav-link text-white" href="#contacto">CONTACTANOS</a></li>
-                    </ul>
-                </div>
-                <div class="modal-footer">
-                    <img src="./images/logoblanco.svg" alt="Logo" class="logo" style="width: 100px;"> <!-- Ajusta el tamaño según necesites -->
-                </div>
-            </div>
-        </div>
-    </div>
+<!-- Modal menu -->
+<div class="modal " id="menuModal" tabindex="-1" aria-labelledby="menuModalLabel" aria-hidden="true" >
+	<div class="modal-dialog modal-fullscreen bio ">
+		<div class="modal-content  " style="padding: 20px; background: rgb(17,3,55);
+		background: -moz-linear-gradient(0deg, rgba(17,3,55,0.7931547619047619) 0%, rgba(255,255,255,1) 0%, rgba(163,199,219,1) 5%, rgba(3,102,156,1) 13%, rgba(3,102,156,1) 24%, rgba(0,68,115,1) 52%, rgba(0,68,115,1) 98%);
+		background: -webkit-linear-gradient(0deg, rgba(17,3,55,0.7931547619047619) 0%, rgba(255,255,255,1) 0%, rgba(163,199,219,1) 5%, rgba(3,102,156,1) 13%, rgba(3,102,156,1) 24%, rgba(0,68,115,1) 52%, rgba(0,68,115,1) 98%);
+		background: linear-gradient(0deg, rgba(17,3,55,0.7931547619047619) 0%, rgba(255,255,255,1) 0%, rgba(163,199,219,1) 5%, rgba(3,102,156,1) 13%, rgba(3,102,156,1) 24%, rgba(0,68,115,1) 52%, rgba(0,68,115,1) 98%);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr= #110337,endColorstr=#004473,GradientType=1); "  >
+			<div class="modal-header justify-content-end" style="border-bottom-color: transparent; background-color: #004473 ">
+				<div type="button" class=" text-white "  data-bs-dismiss="modal" aria-label="Close"> X </div>
+			</div>
+			<div class="modal-body menumod " style="margin-top: 20%;">
+				<ul class="list-unstyled text-white">
+					<li><a class="nav-link text-white" href="#inicio">INICIO</a></li>
+					<hr class="my-2"> <!-- Línea separadora -->
+					<li><a class="nav-link text-white" href="#buscar">BUSCAR PROPIEDADES</a></li>
+					<hr class="my-2">
+					<li><a class="nav-link text-white" href="#oficinas">OFICINAS</a></li>
+					<hr class="my-2">
+					<li><a class="nav-link text-white" href="#asesores">ASESORES</a></li>
+					<hr class="my-2">
+					<li><a class="nav-link text-white" href="#contacto">CONTACTANOS</a></li>
+				</ul>
+
+				<div class="modimagen" style="border-top-color: transparent;">
+					<img src="./images/logoblanco.svg" alt="Logo" class="logo" style="width: 100px;"> <!-- Ajusta el tamaño según necesites -->
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
 	
 	<section class="banner bio">
 		<div class="container text-center">

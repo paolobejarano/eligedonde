@@ -49,12 +49,9 @@ body {
 /* Estilo para el logo en el modal */
 .modal-footer {
 
-  border-top: none; /* Sin borde superior */
   justify-content: center; /* Centrar el logo */
 }
-.modal-header{
-  background-color: #004473;
-}
+
 
 /* Ocultar el menú normal en pantallas pequeñas */
 @media (max-width: 768px) {
@@ -71,15 +68,14 @@ body {
 }
 
 
-.modal-body {
-  text-align: start;
-  background: rgb(17,3,55);
-background: -moz-linear-gradient(0deg, rgba(17,3,55,0.7931547619047619) 0%, rgba(255,255,255,1) 0%, rgba(3,102,156,1) 61%, rgba(0,68,115,1) 100%);
-background: -webkit-linear-gradient(0deg, rgba(17,3,55,0.7931547619047619) 0%, rgba(255,255,255,1) 0%, rgba(3,102,156,1) 61%, rgba(0,68,115,1) 100%);
-background: linear-gradient(0deg, rgba(17,3,55,0.7931547619047619) 0%, rgba(255,255,255,1) 0%, rgba(3,102,156,1) 61%, rgba(0,68,115,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#110337",endColorstr="#004473",GradientType=1);
-color: white;
+.menumod {
+  background-color: transparent !important;
+  padding: 20px;
+  border-color: transparent;
+
 }
+
+
 
 .border {
   border-color:#ffa00a;
@@ -161,8 +157,6 @@ color: white;
 
 .terr{
   line-height: 0.8 !important;
-  text-align: start;
-  font-size: small;
   margin-bottom: 5px;
 }
 
@@ -398,19 +392,48 @@ ul {
 
 /* Conoce el inmueble*/
 .selected-line {
-  height: 4px;
+  height: 0px;
   background-color: #ffa00a; /* Color amarillo */
   width: 100%;
   display: none; /* Oculto por defecto */
 }
 
-.nav-link{
-  background-color: transparent;
-  color: #999 !important;
-  border-top: none;
-  border
-
+.nav-link.active {
+  border-bottom: 1px solid #ffa00a; /* Línea amarilla debajo del elemento activo */
+  color: #03669c !important;
+  background-color: #fcfbfb !important;
+  display: inline-block; 
 }
-.navlink.active {
-  border-bottom: 4px solid #ffa00a; /* Línea amarilla debajo del elemento activo */
+
+.btncon{
+  background-color: transparent !important;
+  color: #002d4d !important;
+  border-radius: 0px !important;
+  flex: 0 0 auto;
+  white-space: nowrap; 
+}
+
+#details ul {
+  list-style-type: none; 
+  padding-left: 20px;
+  text-align: left;
+}
+.nav {
+  display: flex; /* Usar flexbox para alinear los elementos en una fila */
+  overflow-x: auto; /* Permite desplazamiento horizontal */
+  white-space: nowrap; /* Evita que los elementos se rompan a la siguiente línea */
+  overflow-x: auto; /* Permite desplazamiento horizontal */
+  white-space: nowrap; /* Evita que los elementos se rompan a la siguiente línea */
+}
+
+.btnaz1 {
+  color: #fff ;
+  background-color: #002d4d; 
+  border-radius: 20px;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.fotmod{
+  padding: 0;
 }
