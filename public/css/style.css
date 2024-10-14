@@ -437,3 +437,11 @@ ul {
 .fotmod{
   padding: 0;
 }
+
+/* asesores */
+
+.icon{
+  color: #666!important;
+  height: 20px;
+  padding-right: 10px;
+}
