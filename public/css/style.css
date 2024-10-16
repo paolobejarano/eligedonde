@@ -1,507 +1,508 @@
 @font-face {
-  font-family: 'Bio Sans';
-  src: url('../fonts/BioSans-Regular.otf') format('truetype');
+    font-family: 'Bio Sans';
+    src: url('../fonts/BioSans-Regular.otf') format('truetype');
 }
 
 html, body {
-  overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 body {
-  font-family: 'Bio Sans', sans-serif;
+    font-family: 'Bio Sans', sans-serif;
 }
 
 body {
-  margin: 0;
+    margin: 0;
 }
 
-.bio{
-  font-family: 'Bio Sans', sans-serif;
+.bio {
+    font-family: 'Bio Sans', sans-serif;
 }
+
 .logo {
-  height: 60px; /* Ajusta el tamaño según necesites */
+    height: 60px; /* Ajusta el tamaño según necesites */
 }
 
 .bg-primary {
-  background-color: #03669c !important; /* Color de fondo */
+    background-color: #03669c !important; /* Color de fondo */
 }
 
 .bg-secondary {
-  color: #004473 !important; /* Color de fondo */
+    color: #004473 !important; /* Color de fondo */
 }
 
 .g600 {
-  color: #666666 !important; /* Color de fondo */
+    color: #666666 !important; /* Color de fondo */
 }
 
-.g900{
-  color: #999999;
+.g900 {
+    color: #999999;
 }
 
 .navbar-toggler {
-  border: none; /* Sin borde en el botón */
+    border: none; /* Sin borde en el botón */
 }
 
 .navbar-toggler-icon {
-  background-color: white; /* Cambia el color del icono a blanco */
+    background-color: white; /* Cambia el color del icono a blanco */
 }
 
 /* Estilo para el logo en el modal */
 .modal-footer {
 
-  justify-content: center; /* Centrar el logo */
+    justify-content: center; /* Centrar el logo */
 }
 
 
 /* Ocultar el menú normal en pantallas pequeñas */
 @media (max-width: 768px) {
-  .desktop-menu {
-      display: none; /* Ocultar menú normal en móviles */
-  }
+    .desktop-menu {
+        display: none; /* Ocultar menú normal en móviles */
+    }
 }
 
 /* Mostrar el menú normal en pantallas grandes */
 @media (min-width: 769px) {
-  .mobile-menu {
-      display: none; /* Ocultar menú modal en escritorio */
-  }
+    .mobile-menu {
+        display: none; /* Ocultar menú modal en escritorio */
+    }
 }
 
 
 .menumod {
-  background-color: transparent !important;
-  padding: 20px;
-  border-color: transparent;
+    background-color: transparent !important;
+    padding: 20px;
+    border-color: transparent;
 
 }
-
 
 
 .border {
-  border-color:#ffa00a;
+    border-color: #ffa00a;
 }
+
 .banner {
-  background-image: url('../images/Banner.png'); /* Cambia esta ruta */
-  background-size: cover; /* Ajusta la imagen para cubrir toda la sección */
-  background-position: center; /* Centra la imagen */
-  height: 400px; /* Ajusta la altura según necesites */
-  display: flex;
-  align-items: center; /* Centra verticalmente el contenido */
-  color: white; /* Color del texto */
+    background-image: url('../images/Banner.png'); /* Cambia esta ruta */
+    background-size: cover; /* Ajusta la imagen para cubrir toda la sección */
+    background-position: center; /* Centra la imagen */
+    height: 400px; /* Ajusta la altura según necesites */
+    display: flex;
+    align-items: center; /* Centra verticalmente el contenido */
+    color: white; /* Color del texto */
 }
 
 .banner-title {
-  font-size: 2.5rem; /* Ajusta el tamaño del texto */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Añade sombra al texto para mejor legibilidad */
+    font-size: 2.5rem; /* Ajusta el tamaño del texto */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Añade sombra al texto para mejor legibilidad */
 }
 
 .ultimas-propiedades {
-  padding: 50px 0;
+    padding: 50px 0;
 }
 
 .section-title {
-  font-size: 2rem;
-  color: #004473; /* Color del título */
+    font-size: 2rem;
+    color: #004473; /* Color del título */
 }
 
 .line {
-  width: 200px;
-  height: 3px;
-  background-color: #ffa00a;
-  margin: 20px auto;
+    width: 200px;
+    height: 3px;
+    background-color: #ffa00a;
+    margin: 20px auto;
 }
 
 .card {
-  border: #999999;
-  border-radius: 10px; /* Bordes redondeados */
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
-  transition: all 0.3s ease-in-out; /* Animación de suavidad */
+    border: #999999;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    transition: all 0.3s ease-in-out; /* Animación de suavidad */
 }
 
 
 .card:hover {
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Sombra más intensa al pasar el mouse */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Sombra más intensa al pasar el mouse */
 }
 
 .card-img-top {
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .id-property {
-  padding: 1px;
+    padding: 1px;
 
-  text-align: center;
-  color: #ffa00a;
-  border-radius: 10px;
-  border: 1px solid #ffa00a;  /* Aquí aplicas el color del borde */
-  width: 100px;
+    text-align: center;
+    color: #ffa00a;
+    border-radius: 10px;
+    border: 1px solid #ffa00a; /* Aquí aplicas el color del borde */
+    width: 100px;
 }
 
 .price {
-  font-size: 1.2rem;
-  text-align: start;
-  color: #03669c;
-  font-weight: 600;
+    font-size: 1.2rem;
+    text-align: start;
+    color: #03669c;
+    font-weight: 600;
 }
 
 .location {
-  text-align: start;
-  color: #666;
+    text-align: start;
+    color: #666;
 }
 
-.area{
-  color: #666666;
-  font-weight: 600;
+.area {
+    color: #666666;
+    font-weight: 600;
 }
 
-.terr{
-  line-height: 0.8 !important;
-  margin-bottom: 5px;
+.terr {
+    line-height: 0.8 !important;
+    margin-bottom: 5px;
 }
 
-.info{
-  text-align: start;
-  font-size: small;
-  margin-bottom: 5px;
+.info {
+    text-align: start;
+    font-size: small;
+    margin-bottom: 5px;
 }
 
 .square {
-  max-width: 450px; 
-  max-height: 300px; 
-  border-radius: 20px !important; 
-  margin-left: 10%;
+    max-width: 450px;
+    max-height: 300px;
+    border-radius: 20px !important;
+    margin-left: 10%;
 }
 
 @media (max-width: 767px) {
-  .square {
-      width: 100%; 
-      margin-left: 25px;
-      border-radius: 20; 
-  }
+    .square {
+        width: 100%;
+        margin-left: 25px;
+        border-radius: 20;
+    }
 }
 
 .separator {
-  border-color: #004473; /* Color de la línea separadora */
+    border-color: #004473; /* Color de la línea separadora */
 }
 
 .advisor {
-  text-align: center;
+    text-align: center;
 }
 
 .advisor-img {
-  width: 70px; /* Tamaño del círculo del asesor */
-  height: 70px;
-  border-radius: 50%; /* Círculo */
-  object-fit: fill; /* Para que la imagen ajuste bien */
-  box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.3); /* Sombra suave */
-  border-radius: 50%; /* Asegurar que la imagen sea circular */
-  transition: all 0.3s ease-in-out;
+    width: 70px; /* Tamaño del círculo del asesor */
+    height: 70px;
+    border-radius: 50%; /* Círculo */
+    object-fit: fill; /* Para que la imagen ajuste bien */
+    box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.3); /* Sombra suave */
+    border-radius: 50%; /* Asegurar que la imagen sea circular */
+    transition: all 0.3s ease-in-out;
 }
 
 .advisor1-img {
-  width:150px;
-  height: 150px;
-  border-radius: 50%; /* Círculo */
-  object-fit: fill; /* Para que la imagen ajuste bien */
-  box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.3); /* Sombra suave */
-  border-radius: 50%; /* Asegurar que la imagen sea circular */
-  transition: all 0.3s ease-in-out;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Círculo */
+    object-fit: fill; /* Para que la imagen ajuste bien */
+    box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.3); /* Sombra suave */
+    border-radius: 50%; /* Asegurar que la imagen sea circular */
+    transition: all 0.3s ease-in-out;
 }
 
 .advisor-img:hover {
-  box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.5); 
+    box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.5);
 }
 
 .encuentra-tu-lugar {
-  position: relative;
-  height: 400px; /* Ajusta la altura según necesites */
-  background-size: cover; /* Para cubrir toda la sección */
-  background-position: right; /* Centra la imagen */
+    position: relative;
+    height: 400px; /* Ajusta la altura según necesites */
+    background-size: cover; /* Para cubrir toda la sección */
+    background-position: right; /* Centra la imagen */
 }
 
 .encuentra-tu-lugar1 {
-  position: relative;
-  height: 400px; /* Ajusta la altura según necesites */
-  background-size: cover; /* Para cubrir toda la sección */
-  background-position: center; /* Centra la imagen */
+    position: relative;
+    height: 400px; /* Ajusta la altura según necesites */
+    background-size: cover; /* Para cubrir toda la sección */
+    background-position: center; /* Centra la imagen */
 }
 
 .overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 68, 115, 0.6); /* Color #004473 con 60% de transparencia */
-  padding: 40px; /* Espaciado interno */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 68, 115, 0.6); /* Color #004473 con 60% de transparencia */
+    padding: 40px; /* Espaciado interno */
 }
 
 .titulo {
-  font-size: 2rem; /* Ajusta el tamaño del texto */
-  font-weight: bold;
+    font-size: 2rem; /* Ajusta el tamaño del texto */
+    font-weight: bold;
 }
 
 .subtitulo {
-  font-size: 1.2rem; /* Ajusta el tamaño del subtítulo */
+    font-size: 1.2rem; /* Ajusta el tamaño del subtítulo */
 }
 
 .btnye {
-  color: #fff ;
-  background-color: #ffa00a; 
-  border: none; 
-  border-radius: 20px;
-  padding: 10px 20px;
-  display: block;
-  
+    color: #fff;
+    background-color: #ffa00a;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    display: block;
+
 
 }
 
 .btnye:hover {
-  background-color: #ffa00a; /* Color al pasar el ratón */
-  color: #004473; /* Texto en blanco al pasar el ratón */
+    background-color: #ffa00a; /* Color al pasar el ratón */
+    color: #004473; /* Texto en blanco al pasar el ratón */
 }
 
-.contwhite{
-  padding-top: 30px;
-  text-align: center;
+.contwhite {
+    padding-top: 30px;
+    text-align: center;
 }
 
-.redessociales{
-background-color: #ffffff;
- color: #004473;
- padding:10px;
- width: 100px;
- border-radius: 10px;
- box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.3); /* Sombra suave */
- margin: auto;
+.redessociales {
+    background-color: #ffffff;
+    color: #004473;
+    padding: 10px;
+    width: 100px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.3); /* Sombra suave */
+    margin: auto;
 
 }
 
-.sr{
-  text-decoration: none;
+.sr {
+    text-decoration: none;
 }
 
 ul {
-  line-height: 2.5; /* Ajusta el espacio entre líneas */
+    line-height: 2.5; /* Ajusta el espacio entre líneas */
 }
+
 .footer-links h5 {
-  margin-bottom: 15px; /* Espaciado entre el título y la lista */
+    margin-bottom: 15px; /* Espaciado entre el título y la lista */
 }
 
 .footer-links a {
-  text-decoration: none; /* Sin subrayado */
+    text-decoration: none; /* Sin subrayado */
 }
 
 .footer-links a:hover {
-  text-decoration: underline; /* Subrayado al pasar el ratón */
+    text-decoration: underline; /* Subrayado al pasar el ratón */
 }
 
 .ventas-section {
-  background-color: #03669c; /* Fondo azul */
-  padding: 20px;
-  display: flex;
-  justify-content: space-between; /* Espacio entre columnas */
-  margin: auto;
+    background-color: #03669c; /* Fondo azul */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between; /* Espacio entre columnas */
+    margin: auto;
 }
 
 .column {
-  flex: 1; /* Cada columna toma el mismo espacio */
-  margin: 0 10px; /* Espaciado horizontal entre columnas */
+    flex: 1; /* Cada columna toma el mismo espacio */
+    margin: 0 10px; /* Espaciado horizontal entre columnas */
 }
 
 
 /* Buscar propiedades */
 
 .main-image {
-  width: 100%;
-  height: auto;
+    width: 100%;
+    height: auto;
 }
+
 .thumbnail {
-  width: 100%;
-  height: auto;
+    width: 100%;
+    height: auto;
 }
-.tipo{
-  padding: 5px;
-  text-align: center;
-  color: white;
-  border-radius: 10px;
-  background-color: #ffa00a;  /* Aquí aplicas el color del borde */
-  margin-right: 10px;
+
+.tipo {
+    padding: 5px;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    background-color: #ffa00a; /* Aquí aplicas el color del borde */
+    margin-right: 10px;
 }
-.nroid{
-  padding: 5px;
-  text-align: center;
-  color: white;
-  border-radius: 10px;
-  background-color: #004473;  /* Aquí aplicas el color del borde */
-  width: 100px;
+
+.nroid {
+    padding: 5px;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    background-color: #004473; /* Aquí aplicas el color del borde */
+    width: 100px;
 }
 
 .tit {
-  font-size: 1.2rem;
-  text-align: start;
-  color: #03669c;
-  font-weight: 600;
+    font-size: 1.2rem;
+    text-align: start;
+    color: #03669c;
+    font-weight: 600;
 }
+
 .price2 {
-  font-size: 1.2rem;
-  text-align: start;
-  color: #ffa00a;
-  font-weight: 600;
+    font-size: 1.2rem;
+    text-align: start;
+    color: #ffa00a;
+    font-weight: 600;
 }
+
 .btnaz {
-  color: #fff ;
-  background-color: #2ecc71; 
-  border: none; 
-  border-radius: 20px;
-  padding: 10px 20px;
-  display: block;
-  
+    color: #fff;
+    background-color: #2ecc71;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    display: block;
+
 }
 
-.contacto{
-  border: 2px solid #ffa00a;
-  border-radius: 20px;
-  padding: 20px;
-  margin: 10px;
+.contacto {
+    border: 2px solid #ffa00a;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
 }
 
-.message{
-  display: none;
+.message {
+    display: none;
 }
 
 .cardasesor {
-  margin: 20px;
-  border: #999999;
-  border-radius: 10px; /* Bordes redondeados */
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
-  transition: all 0.3s ease-in-out; /* Animación de suavidad */
-  padding: 20px;
+    margin: 20px;
+    border: #999999;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    transition: all 0.3s ease-in-out; /* Animación de suavidad */
+    padding: 20px;
 }
 
 .btnaz {
-  color: #fff ;
-  background-color: #002d4d; 
-  border: none; 
-  border-radius: 20px;
-  padding: 10px 20px;
-  display: block;
-  
+    color: #fff;
+    background-color: #002d4d;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    display: block;
+
 }
 
 /* Conoce el inmueble*/
 .selected-line {
-  height: 0px;
-  background-color: #ffa00a; /* Color amarillo */
-  width: 100%;
-  display: none; /* Oculto por defecto */
+    height: 0px;
+    background-color: #ffa00a; /* Color amarillo */
+    width: 100%;
+    display: none; /* Oculto por defecto */
 }
 
 .nav-link.active {
-  border-bottom: 1px solid #ffa00a; /* Línea amarilla debajo del elemento activo */
-  color: #03669c !important;
-  background-color: #fcfbfb !important;
-  display: inline-block; 
+    border-bottom: 1px solid #ffa00a; /* Línea amarilla debajo del elemento activo */
+    color: #03669c !important;
+    background-color: #fcfbfb !important;
+    display: inline-block;
 }
 
-.btncon{
-  background-color: transparent !important;
-  color: #002d4d !important;
-  border-radius: 0px !important;
-  flex: 0 0 auto;
-  white-space: nowrap; 
+.btncon {
+    background-color: transparent !important;
+    color: #002d4d !important;
+    border-radius: 0px !important;
+    flex: 0 0 auto;
+    white-space: nowrap;
 }
 
 #details ul {
-  list-style-type: none; 
-  padding-left: 20px;
-  text-align: left;
+    list-style-type: none;
+    padding-left: 20px;
+    text-align: left;
 }
+
 .nav {
-  display: flex; /* Usar flexbox para alinear los elementos en una fila */
-  overflow-x: auto; /* Permite desplazamiento horizontal */
-  white-space: nowrap; /* Evita que los elementos se rompan a la siguiente línea */
-  overflow-x: auto; /* Permite desplazamiento horizontal */
-  white-space: nowrap; /* Evita que los elementos se rompan a la siguiente línea */
+    display: flex; /* Usar flexbox para alinear los elementos en una fila */
+    overflow-x: auto; /* Permite desplazamiento horizontal */
+    white-space: nowrap; /* Evita que los elementos se rompan a la siguiente línea */
+    overflow-x: auto; /* Permite desplazamiento horizontal */
+    white-space: nowrap; /* Evita que los elementos se rompan a la siguiente línea */
 }
 
 .btnaz1 {
-  color: #fff ;
-  background-color: #002d4d; 
-  border-radius: 20px;
-  padding: 10px 20px;
-  text-decoration: none;
+    color: #fff;
+    background-color: #002d4d;
+    border-radius: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
 }
 
-.fotmod{
-  padding: 0;
-}
-
-.carousel-inner img {
-  width: 100%; /* Ajusta el ancho al 100% del contenedor */
-  height: auto; /* Mantiene la proporción de la imagen */
-  object-fit: cover; /* Asegura que la imagen cubra todo el contenedor sin distorsionarse */
-  max-height: 380px; /* Limita la altura máxima */
+.fotmod {
+    padding: 0;
 }
 
 /* asesores */
 
-.icon{
-  color: #666!important;
-  height: 20px;
-  padding-right: 10px;
+.icon {
+    color: #666 !important;
+    height: 20px;
+    padding-right: 10px;
 }
 
 /* Buscar propiedades*/
 .card1 {
-  border: #999999;
-  border-radius: 10px; /* Bordes redondeados */
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
-  transition: all 0.3s ease-in-out; /* Animación de suavidad */
+    border: #999999;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    transition: all 0.3s ease-in-out; /* Animación de suavidad */
 
 }
 
-.terr1{
+.terr1 {
 
-  margin-right: 10px;
+    margin-right: 10px;
 }
 
 .custom-input {
-  border: 2px solid #03669C !important;
-  background-color: white; 
-  color: #03669C !important;
-  
-  
+    border: 2px solid #03669C !important;
+    background-color: white;
+    color: #03669C !important;
+
+
 }
 
 .custom-input::placeholder {
-  color: #03669C !important; 
-  
-  
+    color: #03669C !important;
+
+
 }
 
 .custom-button {
-  border: 2px solid #03669C !important; /* Borde de color */
-  background-color: white; /* Fondo blanco */
-  color: #03669C !important; /* Color del texto */
+    border: 2px solid #03669C !important; /* Borde de color */
+    background-color: white; /* Fondo blanco */
+    color: #03669C !important; /* Color del texto */
 }
 
 .custom-button:hover {
-  background-color: #03669C !important; /* Fondo al pasar el mouse */
-  color: white !important; /* Color del texto al pasar el mouse */
+    background-color: #03669C !important; /* Fondo al pasar el mouse */
+    color: white !important; /* Color del texto al pasar el mouse */
 }
 
 .carousel-inner img {
-  width: 100%; /* Ajusta el ancho al 100% del contenedor */
-  height: 380px; /* Establece una altura fija */
-  object-fit: cover; /* Mantiene la proporción y recorta si es necesario */
-  transition: transform 0.5s ease; /* Controla la transición */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
-.businput{
-  background-image: url('../images/buscar.svg');
-  background-repeat: no-repeat;
-  background-position: right 10px center; /* Ajusta la posición del icono */
-  background-size: 20px; /* Ajusta el tamaño del icono */
-  padding-right: 30px; /* Espacio adicional para el texto */
+
+.businput {
+    background-image: url('../images/buscar.svg');
+    background-repeat: no-repeat;
+    background-position: right 10px center; /* Ajusta la posición del icono */
+    background-size: 20px; /* Ajusta el tamaño del icono */
+    padding-right: 30px; /* Espacio adicional para el texto */
 }
