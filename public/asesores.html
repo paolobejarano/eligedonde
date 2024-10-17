@@ -18,12 +18,18 @@
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Bootstrap 5 JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap -->
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
 
 </head>
 <body>
 
-	<header class="text-white bio " style="background-color: #004473;" >
+	<header class="bg-primary text-white bio " >
         <div class="container d-flex justify-content-between align-items-center py-3 mx-auto" style="max-width: 1400px;">
             <img src="./images/logoblanco.svg" alt="Logo" class="logo">
             
@@ -50,45 +56,45 @@
 
             <!-- Botón de menú hamburguesa para móviles -->
             <button class="navbar-toggler mobile-menu " type="button" data-bs-toggle="modal" data-bs-target="#menuModal" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <img src="./images/menuham.png" alt="menuham" class="menuham" style="width: 25px">
             </button>
         </div>
     </header>
 
-    <!-- Modal menu -->
-    <div class="modal " id="menuModal" tabindex="-1" aria-labelledby="menuModalLabel" aria-hidden="true" >
-        <div class="modal-dialog modal-fullscreen bio ">
-            <div class="modal-content  " style="padding: 20px; background: rgb(17,3,55);
-            background: -moz-linear-gradient(0deg, rgba(17,3,55,0.7931547619047619) 0%, rgba(255,255,255,1) 0%, rgba(163,199,219,1) 5%, rgba(3,102,156,1) 13%, rgba(3,102,156,1) 24%, rgba(0,68,115,1) 52%, rgba(0,68,115,1) 98%);
-            background: -webkit-linear-gradient(0deg, rgba(17,3,55,0.7931547619047619) 0%, rgba(255,255,255,1) 0%, rgba(163,199,219,1) 5%, rgba(3,102,156,1) 13%, rgba(3,102,156,1) 24%, rgba(0,68,115,1) 52%, rgba(0,68,115,1) 98%);
-            background: linear-gradient(0deg, rgba(17,3,55,0.7931547619047619) 0%, rgba(255,255,255,1) 0%, rgba(163,199,219,1) 5%, rgba(3,102,156,1) 13%, rgba(3,102,156,1) 24%, rgba(0,68,115,1) 52%, rgba(0,68,115,1) 98%);
-            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr= #110337,endColorstr=#004473,GradientType=1); "  >
-                <div class="modal-header justify-content-end" style="border-bottom-color: transparent; background-color: #004473 ">
-                    <div type="button" class=" text-white "  data-bs-dismiss="modal" aria-label="Close"> X </div>
-                </div>
-                <div class="modal-body menumod " style="margin-top: 20%;">
-                    <ul class="list-unstyled text-white">
-                        <li><a class="nav-link text-white" href="#inicio">INICIO</a></li>
-                        <hr class="my-2"> <!-- Línea separadora -->
-                        <li><a class="nav-link text-white" href="#buscar">BUSCAR PROPIEDADES</a></li>
-                        <hr class="my-2">
-                        <li><a class="nav-link text-white" href="#oficinas">OFICINAS</a></li>
-                        <hr class="my-2">
-                        <li><a class="nav-link text-white" href="#asesores">ASESORES</a></li>
-                        <hr class="my-2">
-                        <li><a class="nav-link text-white" href="#contacto">CONTACTANOS</a></li>
-                    </ul>
+<!-- Modal menu -->
+<div class="modal " id="menuModal" tabindex="-1" aria-labelledby="menuModalLabel" aria-hidden="true" >
+	<div class="modal-dialog modal-fullscreen bio ">
+		<div class="modal-content  " style="padding: 20px; background: rgb(17,3,55);
+		background: -moz-linear-gradient(0deg, rgba(17,3,55,0.7931547619047619) 0%, rgba(255,255,255,1) 0%, rgba(163,199,219,1) 5%, rgba(3,102,156,1) 13%, rgba(3,102,156,1) 24%, rgba(0,68,115,1) 52%, rgba(0,68,115,1) 98%);
+		background: -webkit-linear-gradient(0deg, rgba(17,3,55,0.7931547619047619) 0%, rgba(255,255,255,1) 0%, rgba(163,199,219,1) 5%, rgba(3,102,156,1) 13%, rgba(3,102,156,1) 24%, rgba(0,68,115,1) 52%, rgba(0,68,115,1) 98%);
+		background: linear-gradient(0deg, rgba(17,3,55,0.7931547619047619) 0%, rgba(255,255,255,1) 0%, rgba(163,199,219,1) 5%, rgba(3,102,156,1) 13%, rgba(3,102,156,1) 24%, rgba(0,68,115,1) 52%, rgba(0,68,115,1) 98%);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr= #110337,endColorstr=#004473,GradientType=1); "  >
+			<div class="modal-header justify-content-end" style="border-bottom-color: transparent; background-color: #004473 ">
+				<div type="button" class=" text-white "  data-bs-dismiss="modal" aria-label="Close"> X </div>
+			</div>
+			<div class="modal-body menumod " style="margin-top: 20%;">
+				<ul class="list-unstyled text-white">
+					<li><a class="nav-link text-white" href="#inicio">INICIO</a></li>
+					<hr class="my-2"> <!-- Línea separadora -->
+					<li><a class="nav-link text-white" href="#buscar">BUSCAR PROPIEDADES</a></li>
+					<hr class="my-2">
+					<li><a class="nav-link text-white" href="#oficinas">OFICINAS</a></li>
+					<hr class="my-2">
+					<li><a class="nav-link text-white" href="#asesores">ASESORES</a></li>
+					<hr class="my-2">
+					<li><a class="nav-link text-white" href="#contacto">CONTACTANOS</a></li>
+				</ul>
 
-                    <div class="modimagen" style="border-top-color: transparent;">
-                        <img src="./images/logoblanco.svg" alt="Logo" class="logo" style="width: 100px;"> <!-- Ajusta el tamaño según necesites -->
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-    </div>
+				<div class="modimagen" style="border-top-color: transparent;">
+					<img src="./images/logoblanco.svg" alt="Logo" class="logo" style="width: 100px;"> <!-- Ajusta el tamaño según necesites -->
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
 	
-       <!-- asesor -->
+    <!-- asesor -->
 
 	<section class="ultimas-propiedades  bio px-5">
 		<div class="text-center mx-auto" style="max-width: 1400px;">
@@ -107,10 +113,16 @@
                                 </div>
                                 
                                 <p class="text-center larger mt-2 mx-auto " style="color: #03669c; max-width: 200px; font-weight: 700;">María Nicolle Sanchéz Bocanegra</p>
-                                <div class="advisor mt-2 w-100 mb-3" >
-                                    <img src="./images/Whatsapp.svg" class="ico" alt="Whatsapp" style="padding-left: 10px;">
-                                    <img src="./images/Email.svg" class="ico" alt="Email" style="padding-left: 10px;">
-                                    <img src="./images/cel.svg" class="ico" alt="celular" style="padding-left: 10px;">
+                                <div class="advisor mt-2 w-100 mb-3">
+                                    <a href="https://wa.me/123456789" target="_blank" aria-label="WhatsApp">
+                                        <img src="./images/Whatsapp.svg" class="ico" alt="WhatsApp" style="padding-left: 10px;">
+                                    </a>
+                                    <a href="mailto:example@example.com" target="_blank" aria-label="Email">
+                                        <img src="./images/Email.svg" class="ico" alt="Email" style="padding-left: 10px;">
+                                    </a>
+                                    <a href="tel:+123456789" target="_blank" aria-label="Celular">
+                                        <img src="./images/cel.svg" class="ico" alt="Celular" style="padding-left: 10px;">
+                                    </a>
                                 </div>
                                 <div class="d-flex">
                                     <img src="./images/emailplomo.svg" class="icon" alt="Email" style="width: 30px !important;" >
@@ -141,10 +153,16 @@
                                 </div>
                                 
                                 <p class="text-center larger mt-2 mx-auto " style="color: #03669c; max-width: 200px; font-weight: 700;">Sergio Suarez Benavides</p>
-                                <div class="advisor mt-2 w-100 mb-3" >
-                                    <img src="./images/Whatsapp.svg" class="ico" alt="Whatsapp" style="padding-left: 10px;">
-                                    <img src="./images/Email.svg" class="ico" alt="Email" style="padding-left: 10px;">
-                                    <img src="./images/cel.svg" class="ico" alt="celular" style="padding-left: 10px;">
+                                <div class="advisor mt-2 w-100 mb-3">
+                                    <a href="https://wa.me/123456789" target="_blank" aria-label="WhatsApp">
+                                        <img src="./images/Whatsapp.svg" class="ico" alt="WhatsApp" style="padding-left: 10px;">
+                                    </a>
+                                    <a href="mailto:example@example.com" target="_blank" aria-label="Email">
+                                        <img src="./images/Email.svg" class="ico" alt="Email" style="padding-left: 10px;">
+                                    </a>
+                                    <a href="tel:+123456789" target="_blank" aria-label="Celular">
+                                        <img src="./images/cel.svg" class="ico" alt="Celular" style="padding-left: 10px;">
+                                    </a>
                                 </div>
                                 <div class="d-flex">
                                     <img src="./images/emailplomo.svg" class="icon" alt="Email" style="width: 30px !important;" >
@@ -176,10 +194,16 @@
                                 </div>
                                 
                                 <p class="text-center larger mt-2 mx-auto " style="color: #03669c; max-width: 200px; font-weight: 700;">Fernanda Flor Romero Gallardo</p>
-                                <div class="advisor mt-2 w-100 mb-3" >
-                                    <img src="./images/Whatsapp.svg" class="ico" alt="Whatsapp" style="padding-left: 10px;">
-                                    <img src="./images/Email.svg" class="ico" alt="Email" style="padding-left: 10px;">
-                                    <img src="./images/cel.svg" class="ico" alt="celular" style="padding-left: 10px;">
+                                <div class="advisor mt-2 w-100 mb-3">
+                                    <a href="https://wa.me/123456789" target="_blank" aria-label="WhatsApp">
+                                        <img src="./images/Whatsapp.svg" class="ico" alt="WhatsApp" style="padding-left: 10px;">
+                                    </a>
+                                    <a href="mailto:example@example.com" target="_blank" aria-label="Email">
+                                        <img src="./images/Email.svg" class="ico" alt="Email" style="padding-left: 10px;">
+                                    </a>
+                                    <a href="tel:+123456789" target="_blank" aria-label="Celular">
+                                        <img src="./images/cel.svg" class="ico" alt="Celular" style="padding-left: 10px;">
+                                    </a>
                                 </div>
                                 <div class="d-flex">
                                     <img src="./images/emailplomo.svg" class="icon" alt="Email" style="width: 30px !important;" >
@@ -211,10 +235,16 @@
                                 </div>
                                 
                                 <p class="text-center larger mt-2 mx-auto " style="color: #03669c; max-width: 200px; font-weight: 700;">Georga Traverso Torres</p>
-                                <div class="advisor mt-2 w-100 mb-3" >
-                                    <img src="./images/Whatsapp.svg" class="ico" alt="Whatsapp" style="padding-left: 10px;">
-                                    <img src="./images/Email.svg" class="ico" alt="Email" style="padding-left: 10px;">
-                                    <img src="./images/cel.svg" class="ico" alt="celular" style="padding-left: 10px;">
+                                <div class="advisor mt-2 w-100 mb-3">
+                                    <a href="https://wa.me/123456789" target="_blank" aria-label="WhatsApp">
+                                        <img src="./images/Whatsapp.svg" class="ico" alt="WhatsApp" style="padding-left: 10px;">
+                                    </a>
+                                    <a href="mailto:example@example.com" target="_blank" aria-label="Email">
+                                        <img src="./images/Email.svg" class="ico" alt="Email" style="padding-left: 10px;">
+                                    </a>
+                                    <a href="tel:+123456789" target="_blank" aria-label="Celular">
+                                        <img src="./images/cel.svg" class="ico" alt="Celular" style="padding-left: 10px;">
+                                    </a>
                                 </div>
                                 <div class="d-flex">
                                     <img src="./images/emailplomo.svg" class="icon" alt="Email" style="width: 30px !important;">
@@ -302,48 +332,54 @@
 	
 
 	<section style="background-color:  #03669c;" >
-		<div class="ventas-section" style="max-width: 1400px; text-align: start;">
-			<div class="column col-lg-4 col-md-6 col-12 text-white smaller" style="text-align: start">
-			<div class="row">Venta de departamento en Tacna</div>
-			<div class="row">Venta de departamento en Alto de Alianza</div>
-			<div class="row">Venta de departamento en Palca</div>
-			<div class="row">Venta de departamento en Calana</div>
-			<div class="row">Venta de departamento en Ciudad Nueva</div>
-			<div class="row">Venta de departamento en Coronel Gregorio Albarracín Lanchipa</div>
-			<div class="row">Venta de departamento en Inclán</div>
-			<div class="row">Venta de departamento en La Yarada - Los Palos</div>
-			<div class="row">Venta de departamento en Pachía</div>
-			<div class="row">Venta de departamento en Pocollay</div>
-			<div class="row">Venta de departamento en Sama</div>
-			</div>
-		
-			<div class="column col-lg-4 col-md-6 col-12 text-white smaller" style="text-align: start">
-				<div class="row">Alquiler de departamento en Tacna</div>
-				<div class="row">Alquiler de departamento en Alto de Alianza</div>
-				<div class="row">Alquiler de departamento en Palca</div>
-				<div class="row">Alquiler de departamento en Calana</div>
-				<div class="row">Alquiler de departamento en Ciudad Nueva</div>
-				<div class="row">Alquiler de departamento en Coronel Gregorio Albarracín Lanchipa</div>
-				<div class="row">Alquiler de departamento en Inclán</div>
-				<div class="row">Alquiler de departamento en La Yarada - Los Palos</div>
-				<div class="row">Alquiler de departamento en Pachía</div>
-				<div class="row">Alquiler de departamento en Pocollay</div>
-				<div class="row">Alquiler de departamento en Sama</div>
-			</div>
-		
-			<div class="column col-lg-4 col-md-6 col-12 text-white smaller" style="text-align: start">
-				<div class="row">Venta de casa en Tacna</div>
-				<div class="row">Venta de casa en Alto de Alianza</div>
-				<div class="row">Venta de casa en Palca</div>
-				<div class="row">Venta de casa en Calana</div>
-				<div class="row">Venta de casa en Ciudad Nueva</div>
-				<div class="row">Venta de casa en Coronel Gregorio Albarracín Lanchipa</div>
-				<div class="row">Venta de casa en Inclán</div>
-				<div class="row">Venta de casa en La Yarada - Los Palos</div>
-				<div class="row">Venta de casa en Pachía</div>
-				<div class="row">Venta de casa en Pocollay</div>
-				<div class="row">Venta de casa en Sama</div>
-			</div>
-		</div>
-	  </section>
+        <div class="ventas-section" style="max-width: 1400px; text-align: start; ">
+            <div class="column col-lg-4 col-md-6 col-12 text-white smaller" style="text-align: start; ">
+                <ul >
+                    <li><a href="#" class="text-white sinli">Venta de departamento en Tacna</a></li>
+                    <li><a href="#" class="text-white sinli">Venta de departamento en Alto de Alianza</a></li>
+                    <li><a href="#" class="text-white sinli">Venta de departamento en Palca</a></li>
+                    <li><a href="#" class="text-white sinli">Venta de departamento en Calana</a></li>
+                    <li><a href="#" class="text-white sinli">Venta de departamento en Ciudad Nueva</a></li>
+                    <li><a href="#" class="text-white sinli">Venta de departamento en Coronel Gregorio Albarracín Lanchipa</a></li>
+                    <li><a href="#" class="text-white sinli">Venta de departamento en Inclán</a></li>
+                    <li><a href="#" class="text-white sinli">Venta de departamento en La Yarada - Los Palos</a></li>
+                    <li><a href="#" class="text-white sinli">Venta de departamento en Pachía</a></li>
+                    <li><a href="#" class="text-white sinli">Venta de departamento en Pocollay</a></li>
+                    <li><a href="#" class="text-white sinli">Venta de departamento en Sama</a></li>
+                </ul>
+            </div>
+        
+            <div class="column col-lg-4 col-md-6 col-12 text-white smaller" style="text-align: start">
+                <ul>
+                    <li><a href="#" class="text-white sinli">Alquiler de departamento en Tacna</a></li>
+                    <li><a href="#" class="text-white sinli">Alquiler de departamento en Alto de Alianza</a></li>
+                    <li><a href="#" class="text-white sinli">Alquiler de departamento en Palca</a></li>
+                    <li><a href="#" class="text-white sinli">Alquiler de departamento en Calana</a></li>
+                    <li><a href="#" class="text-white sinli">Alquiler de departamento en Ciudad Nueva</a></li>
+                    <li><a href="#" class="text-white sinli">Alquiler de departamento en Coronel Gregorio Albarracín Lanchipa</a></li>
+                    <li><a href="#" class="text-white sinli">Alquiler de departamento en Inclán</a></li>
+                    <li><a href="#" class="text-white sinli">Alquiler de departamento en La Yarada - Los Palos</a></li>
+                    <li><a href="#" class="text-white sinli">Alquiler de departamento en Pachía</a></li>
+                    <li><a href="#" class="text-white sinli">Alquiler de departamento en Pocollay</a></li>
+                    <li><a href="#" class="text-white sinli">Alquiler de departamento en Sama</a></li>
+                </ul>
+            </div>
+        
+            <div class="column col-lg-4 col-md-6 col-12 text-white smaller" style="text-align: start">
+                <ul>
+                    <li><a href="#" class="text-white sinli">Venta de casa en Tacna</a></li>
+                    <li><a href="#" class="text-white sinli">Venta de casa en Alto de Alianza</a></li>
+                    <li><a href="#" class="text-white sinli">Venta de casa en Palca</a></li>
+                    <li><a href="#" class="text-white sinli">Venta de casa en Calana</a></li>
+                    <li><a href="#" class="text-white sinli">Venta de casa en Ciudad Nueva</a></li>
+                    <li><a href="#" class="text-white sinli">Venta de casa en Coronel Gregorio Albarracín Lanchipa</a></li>
+                    <li><a href="#" class="text-white sinli">Venta de casa en Inclán</a></li>
+                    <li><a href="#" class="text-white sinli">Venta de casa en La Yarada - Los Palos</a></li>
+                    <li><a href="#" class="text-white sinli">Venta de casa en Pachía</a></li>
+                    <li><a href="#" class="text-white sinli">Venta de casa en Pocollay</a></li>
+                    <li><a href="#" class="text-white sinli">Venta de casa en Sama</a></li>
+                </ul>
+            </div>
+        </div>
+      </section>
 </body>
