@@ -152,9 +152,9 @@
 						</div>
                         <div class="dropdown-divider"></div>
                         <div class="d-flex justify-content-between mt-2">
-                            <button type="button" class="btn ">Limpiar</button>
-                            <button type="button" class="btn btn-primary">Ver Resultados</button>
-                        </div>
+							<button type="button" class="btn" onclick="limpiarBusqueda()">Limpiar Búsqueda</button>
+							<button type="button" class="btn btn-primary" onclick="cerrarDropdown()">Ver Resultados</button>
+						</div>
                     </div>
                 </div>
             </div>
@@ -207,9 +207,9 @@
                             </div>
                         </div>
                         <div class="d-flex justify-content-between mt-2">
-                            <button type="button" class="btn ">Limpiar </button>
-                            <button type="button" class="btn btn-primary">Ver Resultados</button>
-                        </div>
+							<button type="button" class="btn" onclick="limpiarBusqueda()">Limpiar Búsqueda</button>
+							<button type="button" class="btn btn-primary" onclick="cerrarDropdown()">Ver Resultados</button>
+						</div>
                     </div>
                 </div>
             </div>
@@ -350,55 +350,24 @@
 						<!-- Baños -->
 						<h6 class="dropdown-header">Baños</h6>
 						<div class="btn-group" role="group" aria-label="Baños">
-							<button type="button" class="btn btn-outline-primary" onclick="seleccionarBano(this)">1+</button>
-							<button type="button" class="btn btn-outline-primary" onclick="seleccionarBano(this)">2+</button>
-							<button type="button" class="btn btn-outline-primary" onclick="seleccionarBano(this)">3+</button>
-							<button type="button" class="btn btn-outline-primary" onclick="seleccionarBano(this)">4+</button>
-							<button type="button" class="btn btn-outline-primary" onclick="seleccionarBano(this)">5+</button>
+							<button type="button" class="btn btn-outline-primary" onclick="seleccionarBano(this); evitarCierre(event)">1+</button>
+							<button type="button" class="btn btn-outline-primary" onclick="seleccionarBano(this); evitarCierre(event)">2+</button>
+							<button type="button" class="btn btn-outline-primary" onclick="seleccionarBano(this); evitarCierre(event)">3+</button>
+							<button type="button" class="btn btn-outline-primary" onclick="seleccionarBano(this); evitarCierre(event)">4+</button>
+							<button type="button" class="btn btn-outline-primary" onclick="seleccionarBano(this); evitarCierre(event)">5+</button>
 						</div>
-						<script>
-							// Función para seleccionar baños
-							function seleccionarBano(boton) {
-								// Remover la clase 'active' de todos los botones de baños
-								const botonesBanos = document.querySelectorAll('[aria-label="Baños"] .btn');
-								botonesBanos.forEach(b => b.classList.remove('active'));
-					
-								// Agregar la clase 'active' al botón seleccionado
-								boton.classList.add('active');
-					
-								// Obtener el valor seleccionado (texto del botón)
-								const valorBanos = boton.innerText;
-								console.log(`Baños seleccionados: ${valorBanos}`);
-								// Aquí puedes agregar la lógica para filtrar o hacer algo con el valor
-							}
-							</script>
 			
 						<!-- Estacionamiento -->
 						<h6 class="dropdown-header">Estacionamiento</h6>
 						<div class="btn-group" role="group" aria-label="Estacionamiento">
-							<button type="button" class="btn btn-outline-primary" onclick="seleccionarEstacionamiento(this)">0</button>
-							<button type="button" class="btn btn-outline-primary" onclick="seleccionarEstacionamiento(this)">1+</button>
-							<button type="button" class="btn btn-outline-primary" onclick="seleccionarEstacionamiento(this)">2+</button>
-							<button type="button" class="btn btn-outline-primary" onclick="seleccionarEstacionamiento(this)">3+</button>
-							<button type="button" class="btn btn-outline-primary" onclick="seleccionarEstacionamiento(this)">4+</button>
+							<button type="button" class="btn btn-outline-primary" onclick="seleccionarEstacionamiento(this); evitarCierre(event)">0</button>
+							<button type="button" class="btn btn-outline-primary" onclick="seleccionarEstacionamiento(this); evitarCierre(event)">1+</button>
+							<button type="button" class="btn btn-outline-primary" onclick="seleccionarEstacionamiento(this); evitarCierre(event)">2+</button>
+							<button type="button" class="btn btn-outline-primary" onclick="seleccionarEstacionamiento(this); evitarCierre(event)">3+</button>
+							<button type="button" class="btn btn-outline-primary" onclick="seleccionarEstacionamiento(this); evitarCierre(event)">4+</button>
 						</div>
 
-						<script>
-						// Función para seleccionar estacionamiento
-						function seleccionarEstacionamiento(boton) {
-							// Remover la clase 'active' de todos los botones de estacionamiento
-							const botonesEstacionamiento = document.querySelectorAll('[aria-label="Estacionamiento"] .btn');
-							botonesEstacionamiento.forEach(b => b.classList.remove('active'));
-				
-							// Agregar la clase 'active' al botón seleccionado
-							boton.classList.add('active');
-				
-							// Obtener el valor seleccionado (texto del botón)
-							const valorEstacionamiento = boton.innerText;
-							console.log(`Estacionamiento seleccionado: ${valorEstacionamiento}`);
-							// Aquí puedes agregar la lógica para filtrar o hacer algo con el valor
-						}
-						</script>
+
 						<!-- Tipo de anunciante -->
 						<h6 class="dropdown-header">Tipo de anunciante</h6>
 						<div class="dropdown-item">
@@ -441,23 +410,7 @@
 							<button type="button" class="btn btn-link" id="toggleButton" onclick="toggleOpciones(event)">Ver más</button>
 						</div>
 			
-						<script>
-							function toggleOpciones(event) {
-								event.stopPropagation(); // Evita que el clic cierre el menú desplegable
-								const opciones = document.getElementById("mas_opciones");
-								const button = document.getElementById("toggleButton");
-			
-								if (opciones.style.display === "none" || opciones.style.display === "") {
-									opciones.style.display = "block";
-									button.textContent = "Ver menos";
-								} else {
-									opciones.style.display = "none";
-									button.textContent = "Ver más";
-								}
-							}
-
-							
-						</script>
+						
 			
 						<!-- Fecha de publicación -->
 						<h6 class="dropdown-header">Fecha de publicación</h6>
@@ -495,36 +448,7 @@
 							<button type="button" class="btn btn-link" id="toggleButtonFecha" onclick="toggleOpcionesFecha(event)">Ver más</button>
 						</div>
 			
-						<script>
-							// Función para mostrar/ocultar más opciones
-							function toggleOpcionesFecha(event) {
-							event.stopPropagation(); // Evita que el clic cierre el menú desplegable si es parte de un dropdown
-							const opciones = document.getElementById("mas_opciones_fecha");
-							const button = document.getElementById("toggleButtonFecha");
 
-							if (opciones.style.display === "none" || opciones.style.display === "") {
-								opciones.style.display = "block";
-								button.textContent = "Ver menos";
-							} else {
-								opciones.style.display = "none";
-								button.textContent = "Ver más";
-							}
-						}
-
-						// Capturar el valor seleccionado del grupo de botones de fecha
-						const radioButtons = document.querySelectorAll('input[name="fecha_publicacion"]');
-						
-						radioButtons.forEach(radio => {
-							radio.addEventListener('change', function() {
-								if (this.checked) {
-									const valorSeleccionado = this.value;
-									console.log(`Fecha de publicación seleccionada: ${valorSeleccionado}`);
-									// Aquí puedes agregar lógica para usar este valor, por ejemplo, filtrar una lista
-								}
-							});
-						});
-						</script>
-			
 						<!-- Ambientes -->
 						<h6 class="dropdown-header">Ambientes</h6>
 						<div class="dropdown-item">
@@ -587,27 +511,12 @@
 							</div>
 							<button type="button" class="btn btn-link" id="toggleButtonAmbientes" onclick="toggleAmbientes(event)">Ver más</button>
 						</div>
-			
-						<script>
-							function toggleAmbientes(event) {
-								event.stopPropagation(); // Evita que el clic cierre el menú desplegable
-								const opciones = document.getElementById("more-ambientes");
-								const button = document.getElementById("toggleButtonAmbientes");
-			
-								if (opciones.style.display === "none" || opciones.style.display === "") {
-									opciones.style.display = "block";
-									button.textContent = "Ver menos";
-								} else {
-									opciones.style.display = "none";
-									button.textContent = "Ver más";
-								}
-							}
-						</script>
+		
 			
 						<div class="dropdown-divider"></div>
 						<div class="d-flex justify-content-between mt-2">
-							<button type="button" class="btn">Limpiar Búsqueda</button>
-							<button type="button" class="btn btn-primary">Ver Resultados</button>
+							<button type="button" class="btn" onclick="limpiarBusqueda()">Limpiar Búsqueda</button>
+							<button type="button" class="btn btn-primary" onclick="cerrarDropdown()">Ver Resultados</button>
 						</div>
 					</div>
 				</div>
@@ -622,18 +531,7 @@
 				<button type="button" class="btn btn-primary d-none d-sm-block d-md-none" onclick="crearAlerta()">
 					Crear Alerta
 				</button>
-			
-				<script>
-					function verMapa() {
-						alert("Abriendo el mapa...");
-						// Aquí puedes agregar lógica para mostrar el mapa
-					}
-			
-					function crearAlerta() {
-						alert("¡Alerta creada con éxito!");
-						// Aquí puedes agregar lógica para crear una alerta personalizada
-					}
-				</script>
+	
 
         </form>
     </div>
@@ -645,7 +543,7 @@
 
 <!-- Últimas Propiedades-->
 <section class="bio px-5 mx-auto" style="max-width: 1400px;">
-    <p class="fs-5">22,363 Departamentos en venta en Perú</p>
+    <p class="fs-5"> <span style="color: #004473;">23,363</span> Departamentos en venta en Perú</p>
     <div class="text-center mx-auto" style="max-width: 1400px;">
         <div class="container-fluid px-0">
             <div class="g-5">
@@ -953,4 +851,178 @@
 		</div>
 	</div>
   </section>
+
+
+  <script>
+    function evitarCierre(event) {
+        event.preventDefault(); // Prevenir el comportamiento predeterminado
+    }
+
+    function cerrarDropdown() {
+        const dropdownToggle = document.querySelector('.dropdown-toggle');
+        const bsDropdown = bootstrap.Dropdown.getInstance(dropdownToggle);
+        if (bsDropdown) {
+            bsDropdown.hide();
+        }
+    }
+
+    function limpiarBusqueda() {
+        // Limpia los inputs de texto
+        const inputs = document.querySelectorAll('.bio input[type="text"], .bio input[type="number"]');
+        inputs.forEach(input => {
+            input.value = '';
+        });
+
+        // Reinicia los select y radios
+        const selects = document.querySelectorAll('.bio select');
+        selects.forEach(select => {
+            select.selectedIndex = 0; // Selecciona la opción por defecto
+        });
+
+        const radios = document.querySelectorAll('.bio input[type="radio"]');
+        radios.forEach(radio => {
+            radio.checked = radio.value === 'todos'; // Reinicia a 'todos'
+        });
+
+        const checkboxes = document.querySelectorAll('.bio input[type="checkbox"]');
+        checkboxes.forEach(checkbox => {
+            checkbox.checked = false; // Desmarcar todos los checkboxes
+        });
+
+        // Reiniciar botones de Baños y Estacionamiento
+        const buttonsBanos = document.querySelectorAll('.btn-group[role="group"] button');
+        buttonsBanos.forEach(button => {
+            button.classList.remove('active'); // Quitar clase activa
+        });
+    }
+
+    // Aquí puedes agregar las funciones seleccionarBano y seleccionarEstacionamiento
+    function seleccionarBano(button) {
+        // Lógica para seleccionar baños
+        resetButtonGroup('btn-group[role="group"]'); // Resetear otros botones
+        button.classList.add('active'); // Marcar botón como activo
+    }
+
+    function seleccionarEstacionamiento(button) {
+        // Lógica para seleccionar estacionamiento
+        resetButtonGroup('btn-group[role="group"]'); // Resetear otros botones
+        button.classList.add('active'); // Marcar botón como activo
+    }
+
+    function resetButtonGroup(groupSelector) {
+        const buttons = document.querySelectorAll(groupSelector + ' button');
+        buttons.forEach(btn => {
+            btn.classList.remove('active'); // Desmarcar todos
+        });
+    }
+
+    // Agrega eventos a las opciones
+    document.querySelectorAll('.dropdown-item a, .dropdown-item select').forEach(item => {
+        item.addEventListener('click', evitarCierre);
+    });
+
+ 
+
+	//Antiguedad
+		function toggleOpciones(event) {
+			event.stopPropagation(); // Evita que el clic cierre el menú desplegable
+			const opciones = document.getElementById("mas_opciones");
+			const button = document.getElementById("toggleButton");
+			
+			if (opciones.style.display === "none" || opciones.style.display === "") {
+				opciones.style.display = "block";
+				button.textContent = "Ver menos";
+			} else {
+				opciones.style.display = "none";
+				button.textContent = "Ver más";
+			}
+		}
+
+	// Estacionamiento
+
+	// Función para seleccionar estacionamiento
+	function seleccionarEstacionamiento(boton) {
+		// Remover la clase 'active' de todos los botones de estacionamiento
+		const botonesEstacionamiento = document.querySelectorAll('[aria-label="Estacionamiento"] .btn');
+		botonesEstacionamiento.forEach(b => b.classList.remove('active'));
+		// Agregar la clase 'active' al botón seleccionado
+		boton.classList.add('active');
+		// Obtener el valor seleccionado (texto del botón)
+		const valorEstacionamiento = boton.innerText;
+		console.log(`Estacionamiento seleccionado: ${valorEstacionamiento}`);
+		// Aquí puedes agregar la lógica para filtrar o hacer algo con el valor
+	}
+
+		// Función para seleccionar baños
+		function seleccionarBano(boton) {
+		// Remover la clase 'active' de todos los botones de baños
+		const botonesBanos = document.querySelectorAll('[aria-label="Baños"] .btn');
+		botonesBanos.forEach(b => b.classList.remove('active'));
+		// Agregar la clase 'active' al botón seleccionado
+		boton.classList.add('active');
+		// Obtener el valor seleccionado (texto del botón)
+		const valorBanos = boton.innerText;
+		console.log(`Baños seleccionados: ${valorBanos}`);
+		// Aquí puedes agregar la lógica para filtrar o hacer algo con el valor
+	}
+	
+	//Ver mapa
+	function verMapa() {
+		alert("Abriendo el mapa...");
+		// Aquí puedes agregar lógica para mostrar el mapa
+	}
+
+	//Boton crear alerta
+	function crearAlerta() {
+		alert("¡Alerta creada con éxito!");
+	    // Aquí puedes agregar lógica para crear una alerta personalizada
+	}
+			
+	//Ver mas ambientes
+	function toggleAmbientes(event) {
+		event.stopPropagation(); // Evita que el clic cierre el menú desplegable
+		const opciones = document.getElementById("more-ambientes");
+		const button = document.getElementById("toggleButtonAmbientes")
+		if (opciones.style.display === "none" || opciones.style.display === "") {
+			opciones.style.display = "block";
+			button.textContent = "Ver menos";
+		} else {
+			opciones.style.display = "none";
+			button.textContent = "Ver más";
+		}
+	}	
+	
+				// Función para mostrar/ocultar más opciones
+			function toggleOpcionesFecha(event) {
+		event.stopPropagation(); // Evita que el clic cierre el menú desplegable si es parte de un dropdown
+		const opciones = document.getElementById("mas_opciones_fecha");
+		const button = document.getElementById("toggleButtonFecha")
+		if (opciones.style.display === "none" || opciones.style.display === "") {
+			opciones.style.display = "block";
+			button.textContent = "Ver menos";
+		} else {
+			opciones.style.display = "none";
+			button.textContent = "Ver más";
+		}
+	}
+
+	// Capturar el valor seleccionado del grupo de botones de fecha
+	const radioButtons = document.querySelectorAll('input[name="fecha_publicacion"]');
+	
+	radioButtons.forEach(radio => {
+		radio.addEventListener('change', function() {
+			if (this.checked) {
+				const valorSeleccionado = this.value;
+				console.log(`Fecha de publicación seleccionada: ${valorSeleccionado}`);
+				// Aquí puedes agregar lógica para usar este valor, por ejemplo, filtrar una lista
+			}
+		});
+	});
+
+	function keepDropdownOpen(event) {
+        event.preventDefault(); // Prevenir el comportamiento predeterminado
+        // Aquí puedes agregar cualquier lógica adicional que necesites al seleccionar la opción
+        console.log(event.target.textContent + ' seleccionada');
+    }
+  </script>
 </body>
