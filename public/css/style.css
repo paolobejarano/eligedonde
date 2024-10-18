@@ -525,3 +525,52 @@ ul {
   padding: 0; /* Elimina el padding por defecto */
   margin: 0; /* Elimina el margin por defecto */
 }
+
+/* Ocultar todos los filtros en pantallas grandes */
+#filtro-precios,
+#filtro-busqueda,
+#filtro-tipo,
+#filtro-propiedad,
+#filtro-dormitorios {
+    display: none;
+}
+
+@media (max-width: 1200px) {
+  
+    #filtro-precios {
+      display: block; /* Mostrar filtro de precios en pantallas de hasta 1184px */
+  }
+}
+
+
+@media (max-width: 991px) {
+  #filtro-precios {
+      display: block; /* Mantener visible filtro de precios */
+  }
+  #filtro-dormitorios {
+      display: block; /* Mostrar filtro de dormitorios en pantallas de hasta 768px */
+  }
+}
+
+@media (max-width: 777px) {
+  #filtro-precios,
+  #filtro-busqueda,
+  #filtro-tipo,
+  #filtro-propiedad,
+  #filtro-dormitorios {
+      display: block; /* Mostrar todos los filtros en pantallas de hasta 480px */
+  }
+}
+
+
+
+.anchofil{
+  transform: translate3d(-40px, 42px, 0px) !important;
+  min-width: 230% !important;
+  max-height: 600px; /* Ajusta la altura máxima a tu preferencia */
+    overflow-y: auto;  /* Permite el scroll vertical */
+}
+
+.carousel-item{
+  
+}

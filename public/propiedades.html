@@ -1,35 +1,28 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1"/>
-	<title>Elige Donde</title>
-
-	<meta name="description" content="Generando bienestar"/>
-
-	<!-- Custom css -->
-	<link rel="stylesheet" href="css/style.css"/>
-    <!-- Font css -->
-    <link href="https://fonts.googleapis.com/css2?family=Bio+Sans&display=swap" rel="stylesheet">
-    <!-- Bootstrap 5 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- Bootstrap 5 JavaScript -->
-
-	<link rel="stylesheet" href="css/bootstrap.min.css"/>
-	<script src="js/bootstrap.bundle.min.js"></script>
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
-
-</head>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Elige Donde</title>
+    
+        <meta name="description" content="Generando bienestar"/>
+    
+        <!-- Custom css -->
+        <link rel="stylesheet" href="css/style.css"/>
+        <!-- Font css -->
+        <link href="https://fonts.googleapis.com/css2?family=Bio+Sans&display=swap" rel="stylesheet">
+        <!-- Bootstrap 5 -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+        <!-- Bootstrap 5 JavaScript (después de jQuery si decides usarlo) -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
 <body>
 
-	<header class="bg-primary text-white bio " >
+	<header class="text-white bio " style="background-color: #004473;">
         <div class="container d-flex justify-content-between align-items-center py-3 mx-auto" style="max-width: 1400px;">
             <img src="./images/logoblanco.svg" alt="Logo" class="logo">
             
@@ -120,23 +113,16 @@
                 </div>
             </div>
             <!-- Modal fotos-->
-            <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+            <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true" data-bs-backdrop="true">
                 <div class="modal-dialog modal-fullscreen">
-                    <div class="modal-content align-items-center" style="background-color: transparent;"> 
-                        <div class="modal-header text-white justify-content-end" style="border-bottom-color: transparent"> 
-                            <div type="button"  data-bs-dismiss="modal" aria-label="Close">X</div>
+                    <div class="modal-content" style="background-color: transparent;"> 
+                        <div class="modal-header text-white justify-content-end text-white" style="border-bottom-color: transparent"> 
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
                             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                                 <div class="carousel-inner">
-                                    <!-- Aquí deben ir los elementos del carrusel, por ejemplo, las imágenes -->
-                                    <div class="carousel-item active">
-                                        <img src="image1.jpg" class="d-block w-100" alt="Imagen 1">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="image2.jpg" class="d-block w-100" alt="Imagen 2">
-                                    </div>
-                                    <!-- Añadir más elementos si es necesario -->
+                                    <!-- El contenido del carrusel se generará dinámicamente -->
                                 </div>
                                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -151,8 +137,7 @@
                     </div>
                 </div>
             </div>
-            
-
+           
             
         </div>
 
@@ -233,14 +218,14 @@
                         <div class="container mt-4 bio">
                             <h2 class="text-center">CONOCE ESTE INMUEBLE</h2>
                             <nav class="nav nav-pills flex-nowrap overflow-auto justify-content-between">                                   
-                                <button class="btncon nav-link  " onclick="selectOption('Caracteristicas generales')"> 
+                                <button class="btncon nav-link "  onclick="selectOption('Caracteristicas generales')"> 
                                     <img src="./images/Document.svg" alt="documento"> Características generales</button>
                                 <button class="btncon nav-link" onclick="selectOption('Servicios')">
-                                    <img src="./images/foco.svg" alt="foco">Servicios</button>
+                                    <img src="./images/foco.svg" alt="foco"> Servicios</button>
                                 <button class="btncon nav-link" onclick="selectOption('Ambientes')">
-                                    <img src="./images/Door.svg" alt="door">Ambientes</button>
+                                    <img src="./images/Door.svg" alt="door"> Ambientes</button>
                                 <button class="btncon nav-link" onclick="selectOption('Exteriores')">
-                                    <img src="./images/Tree.svg" alt="tree">Exteriores</button>
+                                    <img src="./images/Tree.svg" alt="tree"> Exteriores</button>
                             </nav>
                             <div id="selectedLine" class="selected-line"></div>
                             <div id="details" class="mt-4 text-center" style="color: #666666; font-size: small;"></div>
@@ -378,29 +363,7 @@
                 line.style.left = `${rect.left - navRect.left}px`;
             }
         }
-            function setModalImage(src) {
-            const modalBody = document.querySelector('#imageModal .carousel-inner');
-            
-            // Limpiar los elementos existentes en el carrusel
-            modalBody.innerHTML = '';
-
-            // Lista de imágenes
-            const images = [
-                './images/tacna-inmueble1.png',
-                './images/tacna-inmueble2.png',
-                './images/tacna-inmueble3.png',
-                './images/tacna-inmueble4.png',
-                './images/tacna-inmueble5.png'
-            ];
-
-            // Agregar las imágenes al carrusel
-            images.forEach((image, index) => {
-                const item = document.createElement('div');
-                item.className = `carousel-item ${index === 0 ? 'active' : ''}`;
-                item.innerHTML = `<img src="${image}" class="d-block w-100" alt="Imagen ${index + 1}">`;
-                modalBody.appendChild(item);
-            });
-        }
+        
         </script>
     </section>
 
@@ -458,4 +421,26 @@
             </div>
         </div>
       </section>
+
+      <script>
+        const images = [
+            './images/tacna-inmueble2.png',
+            './images/tacna-inmueble3.png',
+            './images/tacna-inmueble4.png',
+            './images/tacna-inmueble5.png'
+        ];
+
+        function setModalImage(imageSrc) {
+            const carouselInner = document.querySelector('.carousel-inner');
+            carouselInner.innerHTML = '';
+
+            images.forEach((imgSrc, index) => {
+                const newImage = document.createElement('div');
+                newImage.className = `carousel-item ${imgSrc === imageSrc ? 'active' : ''}`;
+                newImage.innerHTML = `<img src="${imgSrc}" class="d-block" alt="Imagen ${index + 1}">`;
+                carouselInner.appendChild(newImage);
+            });
+        }
+
+    </script>
 </body>
