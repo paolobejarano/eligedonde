@@ -114,7 +114,7 @@
             </div>
             <!-- Modal fotos-->
             <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true" data-bs-backdrop="true">
-                <div class="modal-dialog modal-xl">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
                     <div class="modal-content" style="background-color: transparent;"> 
                         <div class="modal-header text-white justify-content-end text-white" style="border-bottom-color: transparent"> 
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -218,7 +218,7 @@
                         <div class="container mt-4 bio">
                             <h2 class="text-center">CONOCE ESTE INMUEBLE</h2>
                             <nav class="nav nav-pills flex-nowrap overflow-auto justify-content-between">                                   
-                                <button class="btncon nav-link "  onclick="selectOption('Caracteristicas generales')"> 
+                                <button class="btncon nav-link active "  onclick="selectOption ('Caracteristicas generales')"> 
                                     <img src="./images/Document.svg" alt="documento"> Características generales</button>
                                 <button class="btncon nav-link" onclick="selectOption('Servicios')">
                                     <img src="./images/foco.svg" alt="foco"> Servicios</button>
@@ -325,20 +325,34 @@
             </div>
         </div>
         <script>
-         function selectOption(option) {
-            const details = {
-                "Caracteristicas generales": ["Terraza", "Seguridad", "Caseta de Guardia"],
-                "Servicios": ["Luz", "Agua"],
-                "Ambientes": ["Dormitorio", "Baño", "Cocina"],
-                "Exteriores": ["Cochera", "Patio"]
-            };
 
-            // Actualizar el texto de detalles
-            const detailsDiv = document.getElementById('details');
-            detailsDiv.innerHTML = `<ul>${details[option].map(item => `<li>${item}</li>`).join('')}</ul>`;
 
-            // Actualizar la clase activa
-            const links = document.querySelectorAll('.nav-link');
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Seleccionar la opción "Características generales" por defecto al cargar la página
+    selectOption("Caracteristicas generales");
+});
+
+function selectOption(option) {
+    const details = {
+        "Caracteristicas generales": ["Terraza", "Seguridad", "Caseta de Guardia"],
+        "Servicios": ["Luz", "Agua"],
+        "Ambientes": ["Dormitorio", "Baño", "Cocina"],
+        "Exteriores": ["Cochera", "Patio"]
+    };
+
+    // Actualizar el texto de detalles
+    const detailsDiv = document.getElementById('details');
+    detailsDiv.innerHTML = `<ul>${details[option].map(item => `<li>${item}</li>`).join('')}</ul>`;
+
+    // Remover la clase active de todos los botones
+    const buttons = document.querySelectorAll('.nav-link');
+    buttons.forEach(button => {
+        button.classList.remove('active');
+    });
+
+      // Actualizar la clase activa
+      const links = document.querySelectorAll('.nav-link');
             links.forEach(link => {
                 link.classList.remove('active');
             });
@@ -350,20 +364,25 @@
             });
             if (activeLink) {
                 activeLink.classList.add('active');
+  
+    // Agregar la clase active al botón correspondiente
+    const activeButton = Array.from(buttons).find(button => button.textContent.includes(option));
+    if (activeButton) {
+        activeButton.classList.add('active');
 
-                // Obtener posición y tamaño del botón activo
-                const rect = activeLink.getBoundingClientRect();
-                const nav = activeLink.parentElement; // Obtener el contenedor de los botones
-                const navRect = nav.getBoundingClientRect(); // Obtener la posición del contenedor
+        // Obtener posición y tamaño del botón activo
+        const rect = activeButton.getBoundingClientRect();
+        const nav = activeButton.parentElement; // Obtener el contenedor de los botones
+        const navRect = nav.getBoundingClientRect(); // Obtener la posición del contenedor
 
-                // Establecer las propiedades de la línea
-                const line = document.getElementById('selectedLine');
-                line.style.display = 'block';
-                line.style.width = `${rect.width}px`;
-                line.style.left = `${rect.left - navRect.left}px`;
-            }
-        }
-        
+        // Establecer las propiedades de la línea
+        const line = document.getElementById('selectedLine');
+        line.style.display = 'block';
+        line.style.width = `${rect.width}px`;
+        line.style.left = `${rect.left - navRect.left}px`;
+    }
+}}
+                     
         </script>
     </section>
 

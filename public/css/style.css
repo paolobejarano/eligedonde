@@ -23,6 +23,10 @@ body {
     height: 60px; /* Ajusta el tamaño según necesites */
 }
 
+h6{
+    padding: 0px !important;
+}
+
 .bg-primary {
     background-color: #03669c !important; /* Color de fondo */
 }
@@ -171,7 +175,7 @@ body {
     max-width: 450px;
     max-height: 300px;
     border-radius: 20px !important;
-    margin-left: 10%;
+    margin-left: 20%;
 }
 
 @media (max-width: 767px) {
@@ -527,9 +531,6 @@ ul {
 }
 
 /* Ocultar todos los filtros en pantallas grandes */
-#filtro-precios,
-#filtro-busqueda,
-#filtro-tipo,
 #filtro-propiedad,
 #filtro-dormitorios {
     display: none;
@@ -558,9 +559,20 @@ ul {
   #filtro-tipo,
   #filtro-propiedad,
   #filtro-dormitorios {
-      display: block; /* Mostrar todos los filtros en pantallas de hasta 480px */
+      display: block; 
   }
 }
+
+@media (max-width: 576px) {
+    #filtro-precios,
+    #filtro-busqueda,
+    #filtro-tipo,
+    #filtro-propiedad,
+    #filtro-dormitorios
+    #masfiltros {
+        display: block; 
+    }
+  }
 
 
 
@@ -571,6 +583,28 @@ ul {
     overflow-y: auto;  /* Permite el scroll vertical */
 }
 
-.carousel-item{
-  
+.btn-outline-primary{
+  color: #004473 !important;
+  border-color: #004473 !important;
+}
+
+.btn-outline-primary:hover{
+    color: #fff !important;
+    border-color: #03669C !important;
+    background-color: #03669C !important;
+  }
+
+  .btn-outline-primary.active{
+    color: #fff !important;
+    border-color: #03669C !important;
+    background-color: #03669C !important;
+  }
+
+  .form-check-input:checked{
+    border-color: #03669C !important;
+    background-color: #03669C !important;
+  }
+
+  .dropdown-link-active{
+    background-color: #ffffff !important;
 }
