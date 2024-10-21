@@ -215,11 +215,11 @@
             <!-- Más filtros -->
 			<div class="bio d-none d-sm-block" >
 				<div class="btn-group">
-					<button type="button" class="btn custom-button dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<button type="button" class="btn custom-button dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true"  data-bs-auto-close="outside" aria-expanded="false">
 						Más Filtros
 					</button>
 			
-					<div class="dropdown-menu p-3 anchofil">
+					<div class="dropdown-menu p-3 anchofil" >
 
 						<!-- Input de búsqueda -->
 						<div class="bio" id="filtro-busqueda">
@@ -394,7 +394,7 @@
 								<input class="form-check-input" type="radio" name="antiguedad" id="a_estrenar" value="a_estrenar">
 								<label class="form-check-label" for="a_estrenar">A estrenar</label>
 							</div>
-							<div id="mas_opciones" style="display: none;">
+							<div id="mas_opciones1" style="display: none;">
 								<div class="form-check">
 									<input class="form-check-input" type="radio" name="antiguedad" id="hasta_10" value="hasta_10">
 									<label class="form-check-label" for="hasta_10">Hasta 10 años</label>
@@ -405,7 +405,7 @@
 								</div>
 							</div>
 			
-							<button type="button" class="btn btn-link" id="toggleButton" onclick="toggleOpciones(event)" style="color: #03669c;">Ver más</button>
+							<button type="button" class="btn btn-link" id="toggleButtonDesktop" onclick="toggleOpciones(event, 'mas_opciones1','toggleButtonDesktop')" style="color: #03669c;">Ver más</button>
 						</div>
 			
 						
@@ -443,7 +443,7 @@
 							</div>
 
 			
-							<button type="button" class="btn btn-link" id="toggleButtonFecha" onclick="toggleOpcionesFecha(event)" style="color: #03669c">Ver más</button>
+							<button type="button" class="btn btn-link" id="toggleButtonFecha" onclick="toggleOpcionesFecha(event,'mas_opciones_fecha','toggleButtonFecha' )" style="color: #03669c">Ver más</button>
 						</div>
 			
 
@@ -507,7 +507,7 @@
 									</div>
 								</div>
 							</div>
-							<button type="button" class="btn btn-link" id="toggleButtonAmbientes" onclick="toggleAmbientes(event)" style="color: #004473;">Ver más</button>
+							<button type="button" class="btn btn-link" id="toggleButtonAmbientes" onclick="toggleAmbientes(event,'more-ambientes','toggleButtonAmbientes')" style="color: #004473;">Ver más</button>
 						</div>
 		
 			
@@ -730,7 +730,7 @@
 											<input class="form-check-input" type="radio" name="antiguedad" id="a_estrenar" value="a_estrenar">
 											<label class="form-check-label" for="a_estrenar">A estrenar</label>
 										</div>
-										<div id="mas_opciones" style="display: none;">
+										<div id="mas_opciones2" style="display: none;">
 											<div class="form-check">
 												<input class="form-check-input" type="radio" name="antiguedad" id="hasta_10" value="hasta_10">
 												<label class="form-check-label" for="hasta_10">Hasta 10 años</label>
@@ -741,7 +741,7 @@
 											</div>
 										</div>
 						
-										<button type="button" class="btn btn-link" id="toggleButton" onclick="toggleOpciones(event)" style="color: #03669c;">Ver más</button>
+										<button type="button" class="btn btn-link" id="toggleButtonMobile" onclick="toggleOpciones(event,'mas_opciones2','toggleButtonMobile')" style="color: #03669c;">Ver más</button>
 									</div>
 						
 									
@@ -762,8 +762,9 @@
 											<input class="form-check-input" type="radio" name="fecha_publicacion" id="ultima_semana" value="ultima_semana">
 											<label class="form-check-label" for="ultima_semana">Última semana</label>
 										</div>
-									
-										<div id="opcionesOcultas" class="collapse">
+			
+										<!-- Opciones adicionales ocultas -->
+										<div id="mas_opciones_fecha2" style="display: none;">
 											<div class="form-check">
 												<input class="form-check-input" type="radio" name="fecha_publicacion" id="ultimos_15_dias" value="ultimos_15_dias">
 												<label class="form-check-label" for="ultimos_15_dias">Últimos 15 días</label>
@@ -777,8 +778,9 @@
 												<label class="form-check-label" for="ultimos_45_dias">Últimos 45 días</label>
 											</div>
 										</div>
-									
-										<button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#opcionesOcultas" aria-expanded="false" aria-controls="opcionesOcultas" style="color: #03669c">Ver más</button>
+			
+						
+										<button type="button" class="btn btn-link" id="toggleButtonFechaMobile" onclick="toggleOpcionesFecha(event,'mas_opciones_fecha2','toggleButtonFechaMobile')" style="color: #03669c">Ver más</button>
 									</div>
 						
 			
@@ -803,7 +805,7 @@
 												<label class="form-check-label" for="ambiente-deposito">Depósito</label>
 											</div>
 						
-											<div id="more-ambientes" style="display: none;">
+											<div id="more-ambientes2" style="display: none;">
 												<div class="form-check">
 													<input class="form-check-input" type="checkbox" value="hidromasaje" id="ambiente-hidromasaje">
 													<label class="form-check-label" for="ambiente-hidromasaje">Hidromasaje</label>
@@ -842,7 +844,7 @@
 												</div>
 											</div>
 										</div>
-										<button type="button" class="btn btn-link" id="toggleButtonAmbientes" onclick="toggleAmbientes(event)" style="color: #004473;">Ver más</button>
+										<button type="button" class="btn btn-link" id="toggleButtonAmbientesmobile" onclick="toggleAmbientes(event,'more-ambientes2','toggleButtonAmbientesmobile')" style="color: #004473;">Ver más</button>
 									</div>
 					
 					</form>
@@ -1243,10 +1245,10 @@
  
 
 	//Antiguedad
-		function toggleOpciones(event) {
+		function toggleOpciones(event,id_opciones,id_button) {
 			event.stopPropagation(); // Evita que el clic cierre el menú desplegable
-			const opciones = document.getElementById("mas_opciones");
-			const button = document.getElementById("toggleButton");
+			const opciones = document.getElementById(id_opciones);
+			const button = document.getElementById(id_button);
 			
 			if (opciones.style.display === "none" || opciones.style.display === "") {
 				opciones.style.display = "block";
@@ -1256,6 +1258,8 @@
 				button.textContent = "Ver más";
 			}
 		}
+
+		
 
 	// Estacionamiento
 
@@ -1298,10 +1302,10 @@
 	}
 			
 	//Ver mas ambientes
-	function toggleAmbientes(event) {
+	function toggleAmbientes(event,id_opciones,id_button) {
     event.stopPropagation(); // Evita que el clic cierre el menú desplegable
-    const opciones = document.getElementById("more-ambientes");
-    const button = document.getElementById("toggleButtonAmbientes");
+    const opciones = document.getElementById(id_opciones);
+    const button = document.getElementById(id_button);
     if (opciones.style.display === "none" || opciones.style.display === "") {
         opciones.style.display = "block";
         button.textContent = "Ver menos";
@@ -1312,10 +1316,10 @@
 }	
 	
 				// Función para mostrar/ocultar fechas
-				function toggleOpcionesFecha(event) {
+				function toggleOpcionesFecha(event, id_opciones, id_button) {
     event.stopPropagation(); // Evita que el clic cierre el menú desplegable
-    const opciones = document.getElementById("mas_opciones_fecha");
-    const button = document.getElementById("toggleButtonFecha");
+    const opciones = document.getElementById(id_opciones);
+    const button = document.getElementById(id_button);
     if (opciones.style.display === "none" || opciones.style.display === "") {
         opciones.style.display = "block";
         button.textContent = "Ver menos";
