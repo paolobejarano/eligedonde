@@ -14,13 +14,11 @@
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
-	<!-- Bootstrap -->
-	<link rel="stylesheet" href="css/bootstrap.min.css"/>
-	<script src="js/bootstrap.bundle.min.js"></script>
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="css/bootstrap.min.css"/>
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+		<script src="js/bootstrap.bundle.min.js"></script>
 
 </head>
 <body>
@@ -291,7 +289,7 @@
 									<label class="form-check-label" for="dolares">Dólares</label>
 								</div>
 							</div>
-							<div class="d-flex w-100">
+							<div class="d-flex w-100" style="align-content: space-evenly;">
 								<div class="col-md-6">
 									<select class="form-select" aria-label="Desde" style="width: auto;">
 										<option selected>Desde</option>
@@ -509,7 +507,7 @@
 									</div>
 								</div>
 							</div>
-							<button type="button" class="btn btn-link" id="toggleButtonAmbientes" onclick="toggleAmbientes(event)">Ver más</button>
+							<button type="button" class="btn btn-link" id="toggleButtonAmbientes" onclick="toggleAmbientes(event)" style="color: #004473;">Ver más</button>
 						</div>
 		
 			
@@ -557,331 +555,299 @@
 					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 				</div>
 				<div class="modal-body">
-					</form>
-					<div class="p-3">
-						<!-- Input de búsqueda -->
-						<div id="filtro-busqueda">
-							<h6>Ubicación</h6>
-							<div class="input-group">
-								<input type="text" class="form-control custom-input businput" aria-label="Buscar">
-							</div>
-						</div>
-
-						<!-- Botón de filtro de tipo -->
-						<div id="filtro-tipo">
-							<h6>Tipo de Operación</h6>
-							<select class="form-select custom-button" aria-label="Filtrar por tipo">
-								<option value="alquilar">Alquilar</option>
-								<option value="comprar">Comprar</option>
-								<option value="proyectos">Proyectos</option>
-								<option value="traspaso">Traspaso</option>
-							</select>
-						</div>
-
-						<!-- Botón de filtro de propiedad -->
-						<div id="filtro-propiedad">
-							<h6>Tipo de Propiedad</h6>
-							<select class="form-select custom-button" aria-label="Filtrar por propiedad">
-								<option value="casa">Casa</option>
-								<option value="departamento">Departamento</option>
-								<option value="terreno">Terreno</option>
-							</select>
-						</div>
-
-						<!-- Dormitorios -->
-						<div id="filtro-dormitorios">
-							<h6>Dormitorios</h6>
-							<div class="d-flex">
-								<select class="form-select" aria-label="Dormitorios mínimo" style="width: auto;">
-									<option selected>Sin mínimo</option>
-									<option value="1">1</option>
-									<option value="2">2</option>
-									<option value="3">3</option>
-									<option value="4">4</option>
-									<option value="5">5+</option>
-								</select>
-								<select class="form-select" aria-label="Dormitorios máximo" style="width: auto;">
-									<option selected>Sin máximo</option>
-									<option value="1">1</option>
-									<option value="2">2</option>
-									<option value="3">3</option>
-									<option value="4">4</option>
-									<option value="5">5+</option>
-								</select>
-							</div>
-						</div>
-
-						<!-- Precios -->
-						<div id="filtro-precios">
-							<h6>Precio</h6>
-							<div class="d-flex">
-								<div class="form-check">
-									<input class="form-check-input" type="radio" name="currency" id="soles"
-										value="soles">
-									<label class="form-check-label" for="soles">Soles</label>
-								</div>
-								<div class="form-check">
-									<input class="form-check-input" type="radio" name="currency" id="dolares"
-										value="dolares" checked>
-									<label class="form-check-label" for="dolares">Dólares</label>
-								</div>
-							</div>
-							<div class="d-flex w-100">
-								<select class="form-select" aria-label="Desde" style="width: auto;">
-									<option selected>Desde</option>
-									<option value="1">500</option>
-									<option value="2">1,500</option>
-									<option value="3">2,500</option>
-									<option value="4">3,200</option>
-									<option value="5">4,000</option>
-									<option value="6">6,000</option>
-									<option value="7">8,000</option>
-									<option value="8">12,000</option>
-								</select>
-								<select class="form-select" aria-label="Hasta" style="width: auto;">
-									<option selected>Hasta</option>
-									<option value="1">500</option>
-									<option value="2">1,500</option>
-									<option value="3">2,500</option>
-									<option value="4">3,200</option>
-									<option value="5">4,000</option>
-									<option value="6">6,000</option>
-									<option value="7">8,000</option>
-									<option value="8">12,000</option>
-								</select>
-							</div>
-						</div>
-
-						<!-- Características -->
-						<h6 class="dropdown-header">Características</h6>
-						<div class="input-group mb-3">
-							<input type="text" class="form-control" aria-label="Características"
-								placeholder="Ej. Piscina, amueblado, etc">
-						</div>
-
-						<!-- Superficie -->
-						<h6 class="dropdown-header">Superficie</h6>
-						<div class="dropdown-item d-flex justify-content-between">
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="superficie" id="techada"
-									value="metros">
-								<label class="form-check-label" for="techada">Techada</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="superficie" id="total" value="metros"
-									checked>
-								<label class="form-check-label" for="total">Total</label>
-							</div>
-						</div>
-						<div class="input-group mb-3">
-							<select class="form-select" aria-label="Desde" style="width: 50px !important">
-								<option selected>m2</option>
-								<option value="1">HA</option>
-							</select>
-							<input type="text" class="form-control" aria-label="Superficie desde" placeholder="Desde">
-							<input type="text" class="form-control" aria-label="Superficie hasta" placeholder="Hasta">
-						</div>
-
-						<!-- Baños -->
-						<h6 class="dropdown-header">Baños</h6>
-						<div class="btn-group  w-100" role="group" aria-label="Baños">
-							<button type="button" class="btn btn-outline-primary"
-								onclick="seleccionarBano(this); evitarCierre(event)">1+</button>
-							<button type="button" class="btn btn-outline-primary"
-								onclick="seleccionarBano(this); evitarCierre(event)">2+</button>
-							<button type="button" class="btn btn-outline-primary"
-								onclick="seleccionarBano(this); evitarCierre(event)">3+</button>
-							<button type="button" class="btn btn-outline-primary"
-								onclick="seleccionarBano(this); evitarCierre(event)">4+</button>
-							<button type="button" class="btn btn-outline-primary"
-								onclick="seleccionarBano(this); evitarCierre(event)">5+</button>
-						</div>
-
-						<!-- Estacionamiento -->
-						<h6 class="dropdown-header">Estacionamiento</h6>
-						<div class="btn-group w-100" role="group" aria-label="Estacionamiento">
-							<button type="button" class="btn btn-outline-primary"
-								onclick="seleccionarEstacionamiento(this); evitarCierre(event)">0</button>
-							<button type="button" class="btn btn-outline-primary"
-								onclick="seleccionarEstacionamiento(this); evitarCierre(event)">1+</button>
-							<button type="button" class="btn btn-outline-primary"
-								onclick="seleccionarEstacionamiento(this); evitarCierre(event)">2+</button>
-							<button type="button" class="btn btn-outline-primary"
-								onclick="seleccionarEstacionamiento(this); evitarCierre(event)">3+</button>
-							<button type="button" class="btn btn-outline-primary"
-								onclick="seleccionarEstacionamiento(this); evitarCierre(event)">4+</button>
-						</div>
-
-
-						<!-- Tipo de anunciante -->
-						<h6 class="dropdown-header">Tipo de anunciante</h6>
-						<div class="dropdown-item">
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="tipo_anunciante" id="todos"
-									value="todos" checked>
-								<label class="form-check-label" for="todos">Todos</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="tipo_anunciante" id="inmobiliaria"
-									value="inmobiliaria">
-								<label class="form-check-label" for="inmobiliaria">Inmobiliaria</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="tipo_anunciante" id="dueno"
-									value="dueno">
-								<label class="form-check-label" for="dueno">Dueño directo</label>
-							</div>
-						</div>
-
-						<!-- Antigüedad -->
-						<h6 class="dropdown-header">Antigüedad</h6>
-						<div class="dropdown-item">
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="antiguedad" id="en_construccion" value="en_construccion" checked>
-								<label class="form-check-label" for="en_construccion">En construcción</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="antiguedad" id="a_estrenar" value="a_estrenar">
-								<label class="form-check-label" for="a_estrenar">A estrenar</label>
-							</div>
-							<div id="mas_opciones" style="display: none;">
-								<div class="form-check">
-									<input class="form-check-input" type="radio" name="antiguedad" id="hasta_10" value="hasta_10">
-									<label class="form-check-label" for="hasta_10">Hasta 10 años</label>
-								</div>
-								<div class="form-check">
-									<input class="form-check-input" type="radio" name="antiguedad" id="mas_50" value="mas_50">
-									<label class="form-check-label" for="mas_50">Más de 10 años</label>
-								</div>
-							</div>
-							<button type="button" class="btn btn-link" id="toggleButtonAntiguedad" style="color: #03669c;">Ver más</button>
-						</div>
+					<form class="d-flex row" style="gap: 5px;" >
 		
-
-						<!-- Fecha de publicación -->
-						<h6 class="dropdown-header">Fecha de publicación</h6>
-						<div class="dropdown-item">
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="fecha_publicacion" id="desde_ayer"
-									value="desde_ayer" checked>
-								<label class="form-check-label" for="desde_ayer">Desde ayer</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="fecha_publicacion" id="hoy"
-									value="hoy">
-								<label class="form-check-label" for="hoy">Hoy</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="fecha_publicacion" id="ultima_semana"
-									value="ultima_semana">
-								<label class="form-check-label" for="ultima_semana">Última semana</label>
-							</div>
-
-							<!-- Opciones adicionales ocultas -->
-							<div id="mas_opciones_fecha" style="display: none;">
-								<div class="form-check">
-									<input class="form-check-input" type="radio" name="fecha_publicacion"
-										id="ultimos_15_dias" value="ultimos_15_dias">
-									<label class="form-check-label" for="ultimos_15_dias">Últimos 15 días</label>
-								</div>
-								<div class="form-check">
-									<input class="form-check-input" type="radio" name="fecha_publicacion"
-										id="ultimos_30_dias" value="ultimos_30_dias">
-									<label class="form-check-label" for="ultimos_30_dias">Últimos 30 días</label>
-								</div>
-								<div class="form-check">
-									<input class="form-check-input" type="radio" name="fecha_publicacion"
-										id="ultimos_45_dias" value="ultimos_45_dias">
-									<label class="form-check-label" for="ultimos_45_dias">Últimos 45 días</label>
-								</div>
-							</div>
-
-
-							<button type="button" class="btn btn-link" id="toggleButtonFecha"
-								onclick="toggleOpcionesFecha(event)" style="color: #03669c">Ver más</button>
-						</div>
-
-						<!-- Ambientes -->
-						<h6 class="dropdown-header">Ambientes</h6>
-						<div class="dropdown-item">
-							<div id="ambientes-container">
-								<div class="form-check">
-									<input class="form-check-input" type="checkbox" value="bodega" id="ambiente-bodega">
-									<label class="form-check-label" for="ambiente-bodega">Bodega</label>
-								</div>
-								<div class="form-check">
-									<input class="form-check-input" type="checkbox" value="patio" id="ambiente-patio">
-									<label class="form-check-label" for="ambiente-patio">Patio</label>
-								</div>
-								<div class="form-check">
-									<input class="form-check-input" type="checkbox" value="bano_propio"
-										id="ambiente-bano-propio">
-									<label class="form-check-label" for="ambiente-bano-propio">Baño Propio</label>
-								</div>
-								<div class="form-check">
-									<input class="form-check-input" type="checkbox" value="deposito"
-										id="ambiente-deposito">
-									<label class="form-check-label" for="ambiente-deposito">Depósito</label>
-								</div>
-
-								<div id="more-ambientes" style="display: none;">
-									<div class="form-check">
-										<input class="form-check-input" type="checkbox" value="hidromasaje"
-											id="ambiente-hidromasaje">
-										<label class="form-check-label" for="ambiente-hidromasaje">Hidromasaje</label>
+									<!-- Input de búsqueda -->
+									<div class="bio" id="filtro-busqueda">
+										<h6 class="dropdown-header">Ubicación</h6>
+										<div class="input-group">
+											<input type="text" class="form-control custom-input businput" aria-label="Buscar">
+										</div>
 									</div>
-									<div class="form-check">
-										<input class="form-check-input" type="checkbox" value="piscina_cubierta"
-											id="ambiente-piscina-cubierta">
-										<label class="form-check-label" for="ambiente-piscina-cubierta">Piscina
-											cubierta</label>
+			
+									<!-- Botón de filtro de tipo -->
+									<div class="bio" id="filtro-tipo">
+										<h6 class="dropdown-header">Tipo de Operación</h6>
+										<select class="form-select custom-button" aria-label="Filtrar por tipo">
+											<option value="alquilar">Alquilar</option>
+											<option value="comprar">Comprar</option>
+											<option value="proyectos">Proyectos</option>
+											<option value="traspaso">Traspaso</option>
+										</select>
 									</div>
-									<div class="form-check">
-										<input class="form-check-input" type="checkbox" value="salon_usos_multiples"
-											id="ambiente-salon-usos-multiples">
-										<label class="form-check-label" for="ambiente-salon-usos-multiples">Salón de
-											usos múltiples</label>
+			
+									<!-- Botón de filtro de propiedad -->
+									<div class="bio" id="filtro-propiedad">
+										<h6 class="dropdown-header">Tipo de Propiedad</h6>
+										<select class="form-select custom-button" aria-label="Filtrar por propiedad">
+											<option value="casa">Casa</option>
+											<option value="departamento">Departamento</option>
+											<option value="terreno">Terreno</option>
+										</select>
 									</div>
-									<div class="form-check">
-										<input class="form-check-input" type="checkbox" value="suite"
-											id="ambiente-suite">
-										<label class="form-check-label" for="ambiente-suite">Suite</label>
+									<!-- Dormitorios -->
+									 <div class="bio" id="filtro-dormitorios">
+										<h6 class="dropdown-header">Dormitorios</h6>
+										<div class="d-flex">
+											<div class="dropdown-item">
+												<select class="form-select" aria-label="Dormitorios mínimo" style="width: auto;">
+													<option selected>Sin mínimo</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5+</option>
+												</select>
+											</div>
+											<div class="dropdown-item">
+												<select class="form-select" aria-label="Dormitorios máximo" style="width: auto;">
+													<option selected>Sin máximo</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5+</option>
+												</select>
+											</div>
+										</div>
+									 </div>
+						
+									<!-- Precios -->
+									<div class="bio" id="filtro-precios">
+										<h6 class="dropdown-header">Precio</h6>
+										<div class="dropdown-item d-flex justify-content-between">
+											<div class="form-check">
+												<input class="form-check-input" type="radio" name="currency" id="soles" value="soles">
+												<label class="form-check-label" for="soles">Soles</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input" type="radio" name="currency" id="dolares" value="dolares" checked>
+												<label class="form-check-label" for="dolares">Dólares</label>
+											</div>
+										</div>
+										<div class="d-flex w-100">
+											<div class="col-md-6">
+												<select class="form-select" aria-label="Desde" style="width: auto;">
+													<option selected>Desde</option>
+													<option value="1">500</option>
+													<option value="2">1,500</option>
+													<option value="3">2,500</option>
+													<option value="4">3,200</option>
+													<option value="5">4,000</option>
+													<option value="6">6,000</option>
+													<option value="7">8,000</option>
+													<option value="8">12,000</option>
+												</select>
+											</div>
+											<div class="col-md-6">
+												<select class="form-select" aria-label="Hasta" style="width: auto;">
+													<option selected>Hasta</option>
+													<option value="1">500</option>
+													<option value="2">1,500</option>
+													<option value="3">2,500</option>
+													<option value="4">3,200</option>
+													<option value="5">4,000</option>
+													<option value="6">6,000</option>
+													<option value="7">8,000</option>
+													<option value="8">12,000</option>
+												</select>
+											</div>
+										</div>
 									</div>
-									<div class="form-check">
-										<input class="form-check-input" type="checkbox" value="turco"
-											id="ambiente-turco">
-										<label class="form-check-label" for="ambiente-turco">Turco</label>
+									<!-- Características -->
+									<h6 class="dropdown-header">Características</h6>
+									<div class="input-group mb-3">
+										<input type="text" class="form-control" aria-label="Características" placeholder="Ej. Piscina, amueblado, etc">
 									</div>
-									<div class="form-check">
-										<input class="form-check-input" type="checkbox" value="atico"
-											id="ambiente-atico">
-										<label class="form-check-label" for="ambiente-atico">Ático</label>
+						
+									<!-- Superficie -->
+									<h6 class="dropdown-header">Superficie</h6>
+									<div class="dropdown-item d-flex justify-content-between">
+										<div class="form-check">
+											<input class="form-check-input" type="radio" name="superficie" id="techada" value="metros">
+											<label class="form-check-label" for="techada">Techada</label>
+										</div>
+										<div class="form-check">
+											<input class="form-check-input" type="radio" name="superficie" id="total" value="metros" checked>
+											<label class="form-check-label" for="total">Total</label>
+										</div>
 									</div>
-									<div class="form-check">
-										<input class="form-check-input" type="checkbox" value="areas_cafeteria"
-											id="ambiente-areas-cafeteria">
-										<label class="form-check-label" for="ambiente-areas-cafeteria">Áreas de
-											cafetería</label>
+									<div class="input-group mb-3">
+										<select class="form-select" aria-label="Desde" style="width: 50px !important">
+											<option selected>m2</option>
+											<option value="1">HA</option>
+										</select>
+										<input type="text" class="form-control" aria-label="Superficie desde" placeholder="Desde">
+										<input type="text" class="form-control" aria-label="Superficie hasta" placeholder="Hasta">
 									</div>
-									<div class="form-check">
-										<input class="form-check-input" type="checkbox" value="area_comun"
-											id="ambiente-area-comun">
-										<label class="form-check-label" for="ambiente-area-comun">Área común</label>
+						
+									<!-- Baños -->
+									<h6 class="dropdown-header">Baños</h6>
+									<div class="btn-group  w-100" role="group" aria-label="Baños">
+										<button type="button" class="btn btn-outline-primary" onclick="seleccionarBano(this); evitarCierre(event)">1+</button>
+										<button type="button" class="btn btn-outline-primary" onclick="seleccionarBano(this); evitarCierre(event)">2+</button>
+										<button type="button" class="btn btn-outline-primary" onclick="seleccionarBano(this); evitarCierre(event)">3+</button>
+										<button type="button" class="btn btn-outline-primary" onclick="seleccionarBano(this); evitarCierre(event)">4+</button>
+										<button type="button" class="btn btn-outline-primary" onclick="seleccionarBano(this); evitarCierre(event)">5+</button>
 									</div>
-									<div class="form-check">
-										<input class="form-check-input" type="checkbox" value="cuarto_juegos"
-											id="ambiente-cuarto-juegos">
-										<label class="form-check-label" for="ambiente-cuarto-juegos">Cuarto de
-											juegos</label>
+						
+									<!-- Estacionamiento -->
+									<h6 class="dropdown-header">Estacionamiento</h6>
+									<div class="btn-group w-100" role="group" aria-label="Estacionamiento">
+										<button type="button" class="btn btn-outline-primary" onclick="seleccionarEstacionamiento(this); evitarCierre(event)">0</button>
+										<button type="button" class="btn btn-outline-primary" onclick="seleccionarEstacionamiento(this); evitarCierre(event)">1+</button>
+										<button type="button" class="btn btn-outline-primary" onclick="seleccionarEstacionamiento(this); evitarCierre(event)">2+</button>
+										<button type="button" class="btn btn-outline-primary" onclick="seleccionarEstacionamiento(this); evitarCierre(event)">3+</button>
+										<button type="button" class="btn btn-outline-primary" onclick="seleccionarEstacionamiento(this); evitarCierre(event)">4+</button>
 									</div>
-								</div>
-							</div>
-							<button type="button" class="btn btn-link" id="toggleButtonAmbientes"
-								onclick="toggleAmbientes(event)">Ver más</button>
-						</div>
-
-					</div>
+			
+			
+									<!-- Tipo de anunciante -->
+									<h6 class="dropdown-header">Tipo de anunciante</h6>
+									<div class="dropdown-item">
+										<div class="form-check">
+											<input class="form-check-input" type="radio" name="tipo_anunciante" id="todos" value="todos" checked>
+											<label class="form-check-label" for="todos">Todos</label>
+										</div>
+										<div class="form-check">
+											<input class="form-check-input" type="radio" name="tipo_anunciante" id="inmobiliaria" value="inmobiliaria">
+											<label class="form-check-label" for="inmobiliaria">Inmobiliaria</label>
+										</div>
+										<div class="form-check">
+											<input class="form-check-input" type="radio" name="tipo_anunciante" id="dueno" value="dueno">
+											<label class="form-check-label" for="dueno">Dueño directo</label>
+										</div>
+									</div>
+						
+									<!-- Antigüedad -->
+									<h6 class="dropdown-header">Antigüedad</h6>
+									<div class="dropdown-item">
+										<div class="form-check">
+											<input class="form-check-input" type="radio" name="antiguedad" id="en_construccion" value="en_construccion" checked>
+											<label class="form-check-label" for="en_construccion">En construcción</label>
+										</div>
+										<div class="form-check">
+											<input class="form-check-input" type="radio" name="antiguedad" id="a_estrenar" value="a_estrenar">
+											<label class="form-check-label" for="a_estrenar">A estrenar</label>
+										</div>
+										<div id="mas_opciones" style="display: none;">
+											<div class="form-check">
+												<input class="form-check-input" type="radio" name="antiguedad" id="hasta_10" value="hasta_10">
+												<label class="form-check-label" for="hasta_10">Hasta 10 años</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input" type="radio" name="antiguedad" id="mas_50" value="mas_50">
+												<label class="form-check-label" for="mas_50">Más de 10 años</label>
+											</div>
+										</div>
+						
+										<button type="button" class="btn btn-link" id="toggleButton" onclick="toggleOpciones(event)" style="color: #03669c;">Ver más</button>
+									</div>
+						
+									
+						
+									<!-- Fecha de publicación -->
+									<h6 class="dropdown-header">Fecha de publicación</h6>
+									
+									<div class="dropdown-item">
+										<div class="form-check">
+											<input class="form-check-input" type="radio" name="fecha_publicacion" id="desde_ayer" value="desde_ayer" checked>
+											<label class="form-check-label" for="desde_ayer">Desde ayer</label>
+										</div>
+										<div class="form-check">
+											<input class="form-check-input" type="radio" name="fecha_publicacion" id="hoy" value="hoy">
+											<label class="form-check-label" for="hoy">Hoy</label>
+										</div>
+										<div class="form-check">
+											<input class="form-check-input" type="radio" name="fecha_publicacion" id="ultima_semana" value="ultima_semana">
+											<label class="form-check-label" for="ultima_semana">Última semana</label>
+										</div>
+									
+										<div id="opcionesOcultas" class="collapse">
+											<div class="form-check">
+												<input class="form-check-input" type="radio" name="fecha_publicacion" id="ultimos_15_dias" value="ultimos_15_dias">
+												<label class="form-check-label" for="ultimos_15_dias">Últimos 15 días</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input" type="radio" name="fecha_publicacion" id="ultimos_30_dias" value="ultimos_30_dias">
+												<label class="form-check-label" for="ultimos_30_dias">Últimos 30 días</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input" type="radio" name="fecha_publicacion" id="ultimos_45_dias" value="ultimos_45_dias">
+												<label class="form-check-label" for="ultimos_45_dias">Últimos 45 días</label>
+											</div>
+										</div>
+									
+										<button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#opcionesOcultas" aria-expanded="false" aria-controls="opcionesOcultas" style="color: #03669c">Ver más</button>
+									</div>
+						
+			
+									<!-- Ambientes -->
+									<h6 class="dropdown-header">Ambientes</h6>
+									<div class="dropdown-item">
+										<div id="ambientes-container">
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" value="bodega" id="ambiente-bodega">
+												<label class="form-check-label" for="ambiente-bodega">Bodega</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" value="patio" id="ambiente-patio">
+												<label class="form-check-label" for="ambiente-patio">Patio</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" value="bano_propio" id="ambiente-bano-propio">
+												<label class="form-check-label" for="ambiente-bano-propio">Baño Propio</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" value="deposito" id="ambiente-deposito">
+												<label class="form-check-label" for="ambiente-deposito">Depósito</label>
+											</div>
+						
+											<div id="more-ambientes" style="display: none;">
+												<div class="form-check">
+													<input class="form-check-input" type="checkbox" value="hidromasaje" id="ambiente-hidromasaje">
+													<label class="form-check-label" for="ambiente-hidromasaje">Hidromasaje</label>
+												</div>
+												<div class="form-check">
+													<input class="form-check-input" type="checkbox" value="piscina_cubierta" id="ambiente-piscina-cubierta">
+													<label class="form-check-label" for="ambiente-piscina-cubierta">Piscina cubierta</label>
+												</div>
+												<div class="form-check">
+													<input class="form-check-input" type="checkbox" value="salon_usos_multiples" id="ambiente-salon-usos-multiples">
+													<label class="form-check-label" for="ambiente-salon-usos-multiples">Salón de usos múltiples</label>
+												</div>
+												<div class="form-check">
+													<input class="form-check-input" type="checkbox" value="suite" id="ambiente-suite">
+													<label class="form-check-label" for="ambiente-suite">Suite</label>
+												</div>
+												<div class="form-check">
+													<input class="form-check-input" type="checkbox" value="turco" id="ambiente-turco">
+													<label class="form-check-label" for="ambiente-turco">Turco</label>
+												</div>
+												<div class="form-check">
+													<input class="form-check-input" type="checkbox" value="atico" id="ambiente-atico">
+													<label class="form-check-label" for="ambiente-atico">Ático</label>
+												</div>
+												<div class="form-check">
+													<input class="form-check-input" type="checkbox" value="areas_cafeteria" id="ambiente-areas-cafeteria">
+													<label class="form-check-label" for="ambiente-areas-cafeteria">Áreas de cafetería</label>
+												</div>
+												<div class="form-check">
+													<input class="form-check-input" type="checkbox" value="area_comun" id="ambiente-area-comun">
+													<label class="form-check-label" for="ambiente-area-comun">Área común</label>
+												</div>
+												<div class="form-check">
+													<input class="form-check-input" type="checkbox" value="cuarto_juegos" id="ambiente-cuarto-juegos">
+													<label class="form-check-label" for="ambiente-cuarto-juegos">Cuarto de juegos</label>
+												</div>
+											</div>
+										</div>
+										<button type="button" class="btn btn-link" id="toggleButtonAmbientes" onclick="toggleAmbientes(event)" style="color: #004473;">Ver más</button>
+									</div>
+					
 					</form>
+
+
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn" onclick="limpiarBusqueda()">Limpiar Búsqueda</button>
@@ -890,30 +856,7 @@
 			</div>
 		</div>
 	</div>
-	<script>
-		document.addEventListener('DOMContentLoaded', function() {
-			function toggleDisplay(buttonId, contentId) {
-				const button = document.getElementById(buttonId);
-				const content = document.getElementById(contentId);
-				
-				button.addEventListener('click', function(event) {
-					event.stopPropagation();
-					if (content.style.display === "none" || content.style.display === "") {
-						content.style.display = "block";
-						button.textContent = "Ver menos";
-					} else {
-						content.style.display = "none";
-						button.textContent = "Ver más";
-					}
-				});
-			}
-		
-			// Inicializar botones
-			toggleDisplay('toggleButtonAntiguedad', 'mas_opciones');
-			toggleDisplay('toggleButtonFecha', 'mas_opciones_fecha');
-			toggleDisplay('toggleButtonAmbientes', 'more-ambientes');
-		});
-		</script>
+
 </section>
 
 
@@ -1356,31 +1299,31 @@
 			
 	//Ver mas ambientes
 	function toggleAmbientes(event) {
-		event.stopPropagation(); // Evita que el clic cierre el menú desplegable
-		const opciones = document.getElementById("more-ambientes");
-		const button = document.getElementById("toggleButtonAmbientes")
-		if (opciones.style.display === "none" || opciones.style.display === "") {
-			opciones.style.display = "block";
-			button.textContent = "Ver menos";
-		} else {
-			opciones.style.display = "none";
-			button.textContent = "Ver más";
-		}
-	}	
+    event.stopPropagation(); // Evita que el clic cierre el menú desplegable
+    const opciones = document.getElementById("more-ambientes");
+    const button = document.getElementById("toggleButtonAmbientes");
+    if (opciones.style.display === "none" || opciones.style.display === "") {
+        opciones.style.display = "block";
+        button.textContent = "Ver menos";
+    } else {
+        opciones.style.display = "none";
+        button.textContent = "Ver más";
+    }
+}	
 	
-				// Función para mostrar/ocultar más opciones
-			function toggleOpcionesFecha(event) {
-		event.stopPropagation(); // Evita que el clic cierre el menú desplegable si es parte de un dropdown
-		const opciones = document.getElementById("mas_opciones_fecha");
-		const button = document.getElementById("toggleButtonFecha")
-		if (opciones.style.display === "none" || opciones.style.display === "") {
-			opciones.style.display = "block";
-			button.textContent = "Ver menos";
-		} else {
-			opciones.style.display = "none";
-			button.textContent = "Ver más";
-		}
-	}
+				// Función para mostrar/ocultar fechas
+				function toggleOpcionesFecha(event) {
+    event.stopPropagation(); // Evita que el clic cierre el menú desplegable
+    const opciones = document.getElementById("mas_opciones_fecha");
+    const button = document.getElementById("toggleButtonFecha");
+    if (opciones.style.display === "none" || opciones.style.display === "") {
+        opciones.style.display = "block";
+        button.textContent = "Ver menos";
+    } else {
+        opciones.style.display = "none";
+        button.textContent = "Ver más";
+    }
+}
 
 	// Capturar el valor seleccionado del grupo de botones de fecha
 	const radioButtons = document.querySelectorAll('input[name="fecha_publicacion"]');

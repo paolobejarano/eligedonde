@@ -531,6 +531,9 @@ ul {
 }
 
 /* Ocultar todos los filtros en pantallas grandes */
+#filtro-precios,
+    #filtro-busqueda,
+    #filtro-tipo,
 #filtro-propiedad,
 #filtro-dormitorios {
     display: none;
@@ -554,12 +557,13 @@ ul {
 }
 
 @media (max-width: 777px) {
-  #filtro-precios,
-  #filtro-busqueda,
-  #filtro-tipo,
-  #filtro-propiedad,
-  #filtro-dormitorios {
+    #filtro-precios,
+    #filtro-busqueda,
+    #filtro-tipo,
+  #filtro-dormitorios,
+  #filtro-propiedad {
       display: block; 
+      margin-bottom: 10px;
   }
 }
 
@@ -605,6 +609,8 @@ ul {
     background-color: #03669C !important;
   }
 
-  .dropdown-link-active{
-    background-color: #ffffff !important;
+
+.dropdown-item:active {
+    color: #000 !important;
+    background-color: #fff !important;
 }
