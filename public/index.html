@@ -90,27 +90,27 @@
 	</div>
 </div>
 
-	
-	<section class="banner bio row">
-		<div class="" style="max-width: 1400px;">
-		<div class="container text-center">
-			<h1 class="banner-title">Encuentra el lugar ideal</h1>
-			<div class="btn-group btn-group-toggle btn-group-custom" role="group" aria-label="Opciones">
-				<input type="radio" class="btn-check" name="options" id="venta" autocomplete="off">
-				<label class="btn" for="venta">Venta</label>
-	
-				<input type="radio" class="btn-check" name="options" id="alquiler" autocomplete="off">
-				<label class="btn" for="alquiler">Alquiler</label>
-	
-				<input type="radio" class="btn-check" name="options" id="anticresis" autocomplete="off">
-				<label class="btn" for="anticresis">Anticresis</label>
+	<!-- PAntallas lg -->
+	<section class="banner bio row d-none d-sm-block ">
+		<div class="mx-auto" style="max-width: 1400px;">
+			<div class="container text-center">
+				<h1 class="banner-title">Encuentra el lugar ideal</h1>
+				<div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+					<input type="radio" class="btn-check" name="options" id="venta" autocomplete="off">
+					<label class="btn  btn-custom " for="venta">Venta</label>
+			
+					<input type="radio" class="btn-check" name="options" id="alquiler" autocomplete="off">
+					<label class="btn  btn-custom" for="alquiler">Alquiler</label>
+			
+					<input type="radio" class="btn-check" name="options" id="anticresis" autocomplete="off">
+					<label class="btn   btn-custom " for="anticresis">Anticresis</label>
+				</div>
 			</div>
-		</div>
-
+		
 		<div class="container mt-5">
 			<div class="custom-container ">
 				<!-- Tipo de inmueble -->
-				<div class="custom-button-group col-3" >
+				<div class="custom-button-group w-100" style="padding-left: 5px;" >
 					<select id="tipo-inmueble" class="form-select" style="border-color: transparent;">
 						<option>Departamento</option>
 						<option>Casa</option>
@@ -119,26 +119,33 @@
 						<option>Todos</option>
 					</select>
 				</div>
-		
+				<div>
+				<hr class="lineaVertical" width="2px" style="background-color: #0a0a0a;
+				height: 40px;">
+				</div>
 				<!-- Lugar -->
-				<div class="col-3">
+				<div class="w-100">
 					<input type="text" id="lugar" placeholder="Lugar" class="form-control" style="border-color: transparent;">
 				</div>
-				<div class="vertical-line mx-3" style="width: 1px;
-				background-color: #161515;
-				height: 80%;"></div>
+				<div>
+					<hr class="lineaVertical" width="2px" style="background-color: #0a0a0a;
+					height: 40px;">
+					</div>
 				<!-- Precio Mínimo -->
-				<div class="col-2">
+				<div class="w-50">
 					<input type="number" id="precio-min" placeholder="Precio mínimo" class="form-control" style="border-color: transparent;">
 				</div>
-	
+				<div>
+					<hr class="lineaVertical" width="2px" style="background-color: #0a0a0a;
+					height: 40px;">
+					</div>
 				<!-- Precio Máximo -->
-				<div class="col-2" >
+				<div class="w-50" >
 					<input type="number" id="precio-max" placeholder="Precio máximo" class="form-control" style="border-color: transparent;">
 				</div>
-				
+
 				<!-- Botón Buscar -->
-				<div class="col-2" >
+				<div class="w-50" >
 					<button type="button">Buscar</button>
 				</div>
 			</div>
@@ -153,7 +160,50 @@
 	</div>
 	</section>
 
+	<!-- PAntallas sm -->
+	<section class="d-block d-sm-none  bio banner">
+		<div class="text-center px-2">
+			<h3 class="banner-title">Encuentra el lugar ideal</h3>
+			
+			<!-- Selección de tipo de inmueble -->
+			<div class="custom-button-group w-100 mb-3">
+				<select id="tipo-inmueble" class="form-select " style="background-color: #03669c; border-color: transparent; color: #ffffff;">
+					<option>Departamento</option>
+					<option>Casa</option>
+					<option>Local comercial</option>
+					<option>Terreno</option>
+					<option>Todos</option>
+				</select>
+			</div>
+			
+			<!-- Campo para el lugar -->
+			<div class="w-100 mb-3">
+				<input type="text" id="lugar" placeholder="Elegir dirección" class="form-control ctext" style=" background-color: #03669c; border-color: transparent;">
+			</div>
+			
+			<!-- Campos para el monto y selección de moneda -->
+			<div class="d-flex justify-content-center align-items-center rounded mb-3 text-white" style="max-width: 600px;">
+				<div class="me-3">
+					<input type="number" class="form-control ctext" id="monto-min" placeholder="Monto mínimo" style="background-color: #03669c; border-color: transparent;">
+				</div>
+				<div class="me-3">
+					<input type="number" class="form-control ctext" id="monto-max" placeholder="Monto máximo" style="background-color: #03669c; border-color: transparent;">
+				</div>
+				<div class="me-3">
+					<select class="form-select " id="moneda" style="min-width: 100px; background-color: #03669c; border-color: transparent; color: #ffffff;">
+						<option value="soles" style="color: #ffffff;">Soles</option>
+						<option value="dolares" style="color: #ffffff;">Dólares</option>
+					</select>
+				</div>
+			</div>
+			
+			<!-- Botones de acción -->
+			<button class="btn btn-orange w-100 mb-3" onclick="buscarPropiedades()">Buscar</button>
+			<button class="btn btn-orange w-100" onclick="buscarCercaDeMi()">Buscar alrededor mío</button>
+			
+		</div>
 
+	</section>
 <!-- Últimas Propiedades-->
 	<section class="ultimas-propiedades my-1 bio px-2">
 		<div class="text-center mx-auto" style="max-width: 1400px;">
@@ -502,4 +552,37 @@
 			</div>
 		</div>
 	  </section>
+	  <script>
+		function buscarCercaDeMi() {
+			alert("Buscando propiedades cerca de tu ubicación...");
+			// Aquí puedes agregar lógica adicional para manejar la búsqueda cerca de la ubicación
+		}
+	
+		function verPropiedadesRecientes() {
+			alert("Mostrando propiedades recientes...");
+			// Aquí puedes agregar lógica adicional para manejar la visualización de propiedades recientes
+		}
+	
+		function verBajaronDePrecio() {
+			alert("Mostrando propiedades que bajaron de precio...");
+			// Aquí puedes agregar lógica adicional para manejar la visualización de propiedades con descuento
+		}
+
+    	function buscarPropiedades() {
+        const tipoInmueble = document.getElementById('tipo-inmueble').value;
+        const lugar = document.getElementById('lugar').value;
+        const montoMin = document.getElementById('monto-min').value;
+        const montoMax = document.getElementById('monto-max').value;
+        const moneda = document.getElementById('moneda').value;
+        
+        alert(`Buscando ${tipoInmueble} en ${lugar} con un monto entre ${montoMin} y ${montoMax} en ${moneda}`);
+        // Aquí puedes agregar la lógica para realizar la búsqueda con los valores ingresados
+    	}
+    
+    function buscarCercaDeMi() {
+        alert("Buscando propiedades cerca de tu ubicación actual...");
+        // Aquí puedes agregar la lógica para buscar propiedades cerca del usuario
+    }
+
+	</script>
 </body>

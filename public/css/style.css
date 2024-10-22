@@ -459,8 +459,55 @@ ul {
     cursor: pointer;
 }
 
+.btn-orange {
+    background-color: #ffa00a!important; /* Color #ffa00a con 80% de transparencia */
+    color: white !important;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
 .btn-cerca:hover {
     background-color: #ffa00a; /* Fondo sólido al pasar el ratón */
+}
+
+.ctext::placeholder{
+    color: #fff !important
+}
+.btn-custom{
+    color: white !important;
+    border-color: white !important
+    ;
+}
+
+.btn-custom:checked {
+    background-color: #ffa00a !important;
+    color: white;
+}
+
+.btn-custom:hover {
+    background-color: #ffa00a !important;
+    color: white;
+}
+
+.btn-custom:checked {
+    background-color: #ffa00a !important;
+    color: white;
+}
+
+.btn-group-custom .btn.active{
+ btn-active-bg: #2ecc71 !important;
+}
+
+.btn-custom {
+    --bs-btn-active-bg: #ffa00a; /* Cambia aquí el color del fondo activo */
+    --bs-btn-active-color: white; /* Cambia el color del texto en el estado activo */
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
 }
 
 #details ul {
@@ -496,17 +543,11 @@ ul {
             align-items: center;
             background-color: white;
             border-radius: 40px;
-            padding: 20px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             
         }
 
-        .custom-container > * {
-            flex: 1;
-            margin: 0 5px;
-        }
-
-        .vertical-separator {
+   .vertical-separator {
             width: 1px;
             background-color: #5e5a5a !important;
             height: 70%;
@@ -539,7 +580,7 @@ ul {
             background-color: #ff8f00;
         }
 
-        
+
 /* asesores */
 
 .icon {
