@@ -91,10 +91,66 @@
 </div>
 
 	
-	<section class="banner bio">
+	<section class="banner bio row">
+		<div class="" style="max-width: 1400px;">
 		<div class="container text-center">
 			<h1 class="banner-title">Encuentra el lugar ideal</h1>
+			<div class="btn-group btn-group-toggle btn-group-custom" role="group" aria-label="Opciones">
+				<input type="radio" class="btn-check" name="options" id="venta" autocomplete="off">
+				<label class="btn" for="venta">Venta</label>
+	
+				<input type="radio" class="btn-check" name="options" id="alquiler" autocomplete="off">
+				<label class="btn" for="alquiler">Alquiler</label>
+	
+				<input type="radio" class="btn-check" name="options" id="anticresis" autocomplete="off">
+				<label class="btn" for="anticresis">Anticresis</label>
+			</div>
 		</div>
+
+		<div class="container mt-5">
+			<div class="custom-container ">
+				<!-- Tipo de inmueble -->
+				<div class="custom-button-group col-3" >
+					<select id="tipo-inmueble" class="form-select" style="border-color: transparent;">
+						<option>Departamento</option>
+						<option>Casa</option>
+						<option>Local comercial</option>
+						<option>Terreno</option>
+						<option>Todos</option>
+					</select>
+				</div>
+		
+				<!-- Lugar -->
+				<div class="col-3">
+					<input type="text" id="lugar" placeholder="Lugar" class="form-control" style="border-color: transparent;">
+				</div>
+				<div class="vertical-line mx-3" style="width: 1px;
+				background-color: #161515;
+				height: 80%;"></div>
+				<!-- Precio Mínimo -->
+				<div class="col-2">
+					<input type="number" id="precio-min" placeholder="Precio mínimo" class="form-control" style="border-color: transparent;">
+				</div>
+	
+				<!-- Precio Máximo -->
+				<div class="col-2" >
+					<input type="number" id="precio-max" placeholder="Precio máximo" class="form-control" style="border-color: transparent;">
+				</div>
+				
+				<!-- Botón Buscar -->
+				<div class="col-2" >
+					<button type="button">Buscar</button>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container mt-5 d-flex gap-3 justify-content-center" >
+			<button class="btn-cerca">Buscar cerca de mí</button>
+			<button class="btn-cerca">Propiedades recientes</button>
+			<button class="btn-cerca">Bajaron de precio</button>
+		</div>
+
+	</div>
 	</section>
 
 
