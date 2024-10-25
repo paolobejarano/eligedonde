@@ -408,6 +408,11 @@ ul {
 
 }
 
+.custom-carousel-control .carousel-control-prev-icon,
+.custom-carousel-control .carousel-control-next-icon {
+    color: #ffa00a; /* Cambia el color aquí */
+}
+
 .btn-group-custom .btn {
     border: 1px solid white;
     color: white;
