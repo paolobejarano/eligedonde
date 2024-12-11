@@ -96,8 +96,7 @@ h6{
 }
 
 .banner-title {
-    font-size: 2.5rem; /* Ajusta el tamaño del texto */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Añade sombra al texto para mejor legibilidad */
+    font-size: 3rem; /* Ajusta el tamaño del texto */
 }
 
 .ultimas-propiedades {
@@ -408,10 +407,6 @@ ul {
 
 }
 
-.custom-carousel-control .carousel-control-prev-icon,
-.custom-carousel-control .carousel-control-next-icon {
-    color: #ffa00a; /* Cambia el color aquí */
-}
 
 .btn-group-custom .btn {
     border: 1px solid white;
@@ -459,7 +454,17 @@ ul {
     color: white ;
     border: none;
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-azul {
+    background-color: #002d4d !important ; /* Color #ffa00a con 80% de transparencia */
+    color: white ;
+    border: none;
+    padding: 10px 35px !important;
+    border-radius: 20px !important;
     font-size: 16px;
     cursor: pointer;
 }
