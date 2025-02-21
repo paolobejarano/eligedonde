@@ -23,7 +23,7 @@ body {
     height: 50px;
 }
 
-h6{
+h6 {
     padding: 0px !important;
 }
 
@@ -315,12 +315,13 @@ ul {
 
 
 .social-icon {
-  color: #004473; /* Color de los íconos */
-  text-decoration: none; /* Sin subrayado */
-  margin: 0 10px; /* Espacio entre íconos */
+    color: #004473; /* Color de los íconos */
+    text-decoration: none; /* Sin subrayado */
+    margin: 0 10px; /* Espacio entre íconos */
 }
+
 .social-icon:hover {
-  opacity: 0.8; /* Efecto al pasar el mouse */
+    opacity: 0.8; /* Efecto al pasar el mouse */
 }
 
 /* Buscar propiedades */
@@ -450,8 +451,8 @@ ul {
 }
 
 .btn-cerca {
-    background-color: rgba(255, 160, 10, 0.8) ; /* Color #ffa00a con 80% de transparencia */
-    color: white ;
+    background-color: rgba(255, 160, 10, 0.8); /* Color #ffa00a con 80% de transparencia */
+    color: white;
     border: none;
     padding: 10px 20px;
     border-radius: 20px;
@@ -460,18 +461,18 @@ ul {
 }
 
 .btn-azul {
-    background-color: #002d4d !important ; /* Color #ffa00a con 80% de transparencia */
-    color: white ;
+    background-color: #002d4d !important; /* Color #ffa00a con 80% de transparencia */
+    color: white;
     border: none;
     padding: 10px 35px !important;
     font-size: 16px;
     cursor: pointer;
     margin-right: 10px;
-    
+
 }
 
 .btn-orange {
-    background-color: #ffa00a!important; /* Color #ffa00a con 80% de transparencia */
+    background-color: #ffa00a !important; /* Color #ffa00a con 80% de transparencia */
     color: white !important;
     border: none;
     padding: 10px 20px;
@@ -485,13 +486,13 @@ ul {
     background-color: #ffa00a; /* Fondo sólido al pasar el ratón */
 }
 
-.ctext::placeholder{
+.ctext::placeholder {
     color: #fff !important
 }
-.btn-custom{
+
+.btn-custom {
     color: white !important;
-    border-color: white !important
-    ;
+    border-color: white !important;
 }
 
 .btn-custom:checked {
@@ -509,8 +510,8 @@ ul {
     color: white;
 }
 
-.btn-group-custom .btn.active{
- btn-active-bg: #2ecc71 !important;
+.btn-group-custom .btn.active {
+    btn-active-bg: #2ecc71 !important;
 }
 
 .btn-custom {
@@ -548,48 +549,48 @@ ul {
 }
 
 
-/*buscador principal*/ 
-   .custom-container {
-            display: flex;
-            align-items: center;
-            background-color: white;
-            border-radius: 40px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+/*buscador principal*/
+.custom-container {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             
-        }
+}
 
-   .vertical-separator {
-            width: 1px;
-            background-color: #5e5a5a !important;
-            height: 70%;
-            align-self: center;
-        }
+.vertical-separator {
+    width: 1px;
+    background-color: #5e5a5a !important;
+    height: 70%;
+    align-self: center;
+}
 
-        .custom-button-group {
-            display: flex;
-            gap: 10px;
-        }
+.custom-button-group {
+    display: flex;
+    gap: 10px;
+}
 
-        .custom-container input[type="text"], 
-        .custom-container input[type="number"] {
-            width: 100%;
-            padding: 8px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
+.custom-container input[type="text"],
+.custom-container input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
 
-        .custom-container button {
-            background-color: #ffa00a;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
+.custom-container button {
+    background-color: #ffa00a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
-        .custom-container button:hover {
-            background-color: #ff8f00;
-        }
+.custom-container button:hover {
+    background-color: #ff8f00;
+}
 
 
 /* asesores */
@@ -653,53 +654,54 @@ ul {
     padding-right: 30px; /* Espacio adicional para el texto */
 }
 
-.sinli{
-  text-decoration: none;
-  font-size: small;
-  line-height: 1px;
+.sinli {
+    text-decoration: none;
+    font-size: small;
+    line-height: 1px;
 }
 
 .ventas-section ul {
-  list-style-type: none; 
-  padding: 0; /* Elimina el padding por defecto */
-  margin: 0; /* Elimina el margin por defecto */
+    list-style-type: none;
+    padding: 0; /* Elimina el padding por defecto */
+    margin: 0; /* Elimina el margin por defecto */
 }
 
 /* Ocultar todos los filtros en pantallas grandes */
 #filtro-precios,
-    #filtro-busqueda,
-    #filtro-tipo,
+#filtro-busqueda,
+#filtro-tipo,
 #filtro-propiedad,
 #filtro-dormitorios {
     display: none;
 }
 
 @media (max-width: 1200px) {
-  
+
     #filtro-precios {
-      display: block; /* Mostrar filtro de precios en pantallas de hasta 1184px */
-  }
+        display: block; /* Mostrar filtro de precios en pantallas de hasta 1184px */
+    }
 }
 
 
 @media (max-width: 991px) {
-  #filtro-precios {
-      display: block; /* Mantener visible filtro de precios */
-  }
-  #filtro-dormitorios {
-      display: block; /* Mostrar filtro de dormitorios en pantallas de hasta 768px */
-  }
+    #filtro-precios {
+        display: block; /* Mantener visible filtro de precios */
+    }
+
+    #filtro-dormitorios {
+        display: block; /* Mostrar filtro de dormitorios en pantallas de hasta 768px */
+    }
 }
 
 @media (max-width: 777px) {
     #filtro-precios,
     #filtro-busqueda,
     #filtro-tipo,
-  #filtro-dormitorios,
-  #filtro-propiedad {
-      display: block; 
-      margin-bottom: 10px;
-  }
+    #filtro-dormitorios,
+    #filtro-propiedad {
+        display: block;
+        margin-bottom: 10px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -709,40 +711,39 @@ ul {
     #filtro-propiedad,
     #filtro-dormitorios
     #masfiltros {
-        display: block; 
+        display: block;
     }
-  }
-
-
-
-.anchofil{
-  transform: translate3d(-40px, 42px, 0px) !important;
-  min-width: 230% !important;
-  max-height: 600px; /* Ajusta la altura máxima a tu preferencia */
-    overflow-y: auto;  /* Permite el scroll vertical */
 }
 
-.btn-outline-primary{
-  color: #004473 !important;
-  border-color: #004473 !important;
+
+.anchofil {
+    transform: translate3d(-40px, 42px, 0px) !important;
+    min-width: 230% !important;
+    max-height: 600px; /* Ajusta la altura máxima a tu preferencia */
+    overflow-y: auto; /* Permite el scroll vertical */
 }
 
-.btn-outline-primary:hover{
+.btn-outline-primary {
+    color: #004473 !important;
+    border-color: #004473 !important;
+}
+
+.btn-outline-primary:hover {
     color: #fff !important;
     border-color: #03669C !important;
     background-color: #03669C !important;
-  }
+}
 
-  .btn-outline-primary.active{
+.btn-outline-primary.active {
     color: #fff !important;
     border-color: #03669C !important;
     background-color: #03669C !important;
-  }
+}
 
-  .form-check-input:checked{
+.form-check-input:checked {
     border-color: #03669C !important;
     background-color: #03669C !important;
-  }
+}
 
 
 .dropdown-item:active {
