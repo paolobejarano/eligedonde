@@ -599,10 +599,10 @@ ul {
 /* Buscar propiedades*/
 .card1 {
     border: #999999;
-    border-radius: 10px; /* Bordes redondeados */
+    border-radius: 20px; /* Bordes redondeados */
+    overflow: hidden; /* Oculta el contenido que se desborda */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
     transition: all 0.3s ease-in-out; /* Animación de suavidad */
-
 }
 
 .terr1 {
