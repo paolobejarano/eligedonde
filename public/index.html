@@ -27,16 +27,16 @@
 
 <header class="bg-primary text-white bio ">
 	<div class="container d-flex justify-content-between align-items-center py-3 mx-auto" style="max-width: 1400px;">
-		<img src="images/logo-white.png" alt="Logo" class="logo">
+		<a href="index.html">
+			<img src="images/logo-white.png" alt="Logo" class="logo">
+		</a>
 
 		<!-- Menú en pantallas de escritorio -->
 		<nav class="desktop-menu">
 			<ul class="nav">
-				<li><a class="nav-link text-white" href="index.html">INICIO</a></li>
+				<li><a class="nav-link text-white active" href="index.html">INICIO</a></li>
 				<hr class="my-2">
 				<li><a class="nav-link text-white" href="busquedadepropiedades.html">BUSCAR PROPIEDADES</a></li>
-				<hr class="my-2">
-				<li><a class="nav-link text-white" href="index.html#oficinas">OFICINAS</a></li>
 				<hr class="my-2">
 				<li><a class="nav-link text-white" href="asesores.html">ASESORES</a></li>
 				<hr class="my-2">
@@ -104,10 +104,12 @@
 		</div>
 
 
-		<div class="container mt-5">
-			<div class="custom-container ">
+		<div class="custom-container mt-5">
+
+			<div class="d-flex align-items-center flex-grow-1 flex-fill">
+
 				<!-- Tipo de inmueble -->
-				<div class="custom-button-group w-100" style="padding-left: 5px;">
+				<div class="custom-button-group" style="width: 22%; padding-left: 5px;">
 					<select id="tipo-inmueble" class="form-select" style="border-color: transparent;" required>
 						<option selected disabled value="">Tipo de inmueble</option>
 						<option>Departamento</option>
@@ -117,42 +119,47 @@
 						<option>Todos</option>
 					</select>
 				</div>
+
 				<div>
 					<hr class="lineaVertical" width="2px" style="background-color: #0a0a0a; height: 40px;">
 				</div>
+
 				<!-- Lugar -->
-				<div class="w-100">
+				<div style="width: 40%;">
 					<input type="text" id="lugar" placeholder="¿En dónde buscas?" class="form-control"
 						   style="border-color: transparent;">
 				</div>
+
+				<!-- Divider -->
 				<div>
-					<hr class="lineaVertical" width="2px" style="background-color: #0a0a0a;
-					height: 40px;">
+					<hr class="lineaVertical" style="width: 2px; background-color: #0a0a0a; height: 40px;">
 				</div>
+
 				<!-- Precio Mínimo -->
-				<div class="w-50">
+				<div style="width: 17%;">
 					<input type="number" id="precio-min" placeholder="Precio mínimo" class="form-control"
 						   style="border-color: transparent; white-space: nowrap; width: 100%;">
 				</div>
 
 				<div>
-					<hr class="lineaVertical" width="2px" style="background-color: #0a0a0a;
-					height: 40px;">
+					<hr class="lineaVertical" width="2px" style="background-color: #0a0a0a; height: 40px;">
 				</div>
+
 				<!-- Precio Máximo -->
-				<div class="w-50">
+				<div style="width: 17%;">
 					<input type="number" id="precio-max" placeholder="Precio máximo" class="form-control"
 						   style="border-color: transparent;">
 				</div>
+			</div>
 
-				<!-- Botón Buscar -->
-				<div class="w-50 text-center">
-					<button class="btn-azul rounded-pill" type="button">Buscar</button>
-				</div>
+
+			<!-- Botón Buscar -->
+			<div class=" text-center">
+				<button class="btn-azul rounded-pill" type="button">Buscar</button>
 			</div>
 		</div>
 
-		<div class="container mt-5 d-flex gap-3 justify-content-center">
+		<div class="mt-5 d-flex gap-3 justify-content-center flex-shrink-1">
 			<button class="btn-cerca">Buscar cerca de mí</button>
 			<button class="btn-cerca">Propiedades recientes</button>
 			<button class="btn-cerca">Bajaron de precio</button>
@@ -254,9 +261,9 @@
 									</div>
 								</div>
 							</div>
-							<button class="btn btn-primary mt-3">
+							<a href="propiedad.html" class="btn btn-primary mt-3">
 								Conocer
-							</button>
+							</a>
 							<div class="py-4">
 							</div>
 						</div>
@@ -297,9 +304,9 @@
 									</div>
 								</div>
 							</div>
-							<button class="btn btn-primary mt-3">
+							<a href="propiedad.html" class="btn btn-primary mt-3">
 								Conocer
-							</button>
+							</a>
 							<div class="py-4">
 
 							</div>
@@ -342,9 +349,9 @@
 									</div>
 								</div>
 							</div>
-							<button class="btn btn-primary mt-3">
+							<a href="propiedad.html" class="btn btn-primary mt-3">
 								Conocer
-							</button>
+							</a>
 							<div class="py-4">
 
 							</div>
@@ -387,9 +394,9 @@
 									</div>
 								</div>
 							</div>
-							<button class="btn btn-primary mt-3">
+							<a href="propiedad.html" class="btn btn-primary mt-3">
 								Conocer
-							</button>
+							</a>
 							<div class="py-4">
 
 							</div>

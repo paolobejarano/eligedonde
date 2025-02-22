@@ -435,11 +435,8 @@ ul {
     display: none; /* Oculto por defecto */
 }
 
-.nav-link.active {
-    border-bottom: 1px solid #ffa00a; /* Línea amarilla debajo del elemento activo */
-    color: #03669c !important;
-    background-color: #fcfbfb !important;
-    display: inline-block;
+.nav-link.active, .nav-link:hover {
+    border-bottom: 2px solid #ffa00a !important; /* Línea amarilla debajo del elemento activo */
 }
 
 .btncon {
@@ -468,7 +465,6 @@ ul {
     font-size: 16px;
     cursor: pointer;
     margin-right: 10px;
-
 }
 
 .btn-orange {
@@ -556,7 +552,6 @@ ul {
     background-color: white;
     border-radius: 40px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            
 }
 
 .vertical-separator {
@@ -744,7 +739,6 @@ ul {
     border-color: #03669C !important;
     background-color: #03669C !important;
 }
-
 
 .dropdown-item:active {
     color: #000 !important;

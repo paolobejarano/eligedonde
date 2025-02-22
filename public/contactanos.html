@@ -31,27 +31,27 @@
 
 <header class="bg-primary text-white bio ">
 	<div class="container d-flex justify-content-between align-items-center py-3 mx-auto" style="max-width: 1400px;">
-		<img src="./images/logo-white.png" alt="Logo" class="logo">
+		<a href="index.html">
+			<img src="images/logo-white.png" alt="Logo" class="logo">
+		</a>
 
 		<!-- Menú en pantallas de escritorio -->
 		<nav class="desktop-menu">
 			<ul class="nav">
-				<li><a class="nav-link text-white" href="index.html">INICIO</a></li>
+				<li><a class="nav-link text-white active" href="index.html">INICIO</a></li>
 				<hr class="my-2">
 				<li><a class="nav-link text-white" href="busquedadepropiedades.html">BUSCAR PROPIEDADES</a></li>
 				<hr class="my-2">
-				<li><a class="nav-link text-white" href="index.html#oficinas">OFICINAS</a></li>
-				<hr class="my-2">
 				<li><a class="nav-link text-white" href="asesores.html">ASESORES</a></li>
 				<hr class="my-2">
-				<li><a class="nav-link text-white" href="contactanos.html">CONTACTANOS</a></li>
+				<li><a class="nav-link text-white active" href="contactanos.html">CONTACTANOS</a></li>
 			</ul>
 		</nav>
 
 		<!-- Botón de menú hamburguesa para móviles -->
 		<button class="navbar-toggler mobile-menu " type="button" data-bs-toggle="modal" data-bs-target="#menuModal"
 				aria-label="Toggle navigation">
-			<img src="./images/menuham.png" alt="menuham" class="menuham" style="width: 25px">
+			<img src="images/menuham.png" alt="menuham" class="menuham" style="width: 25px">
 		</button>
 	</div>
 </header>
@@ -82,7 +82,7 @@
 				</ul>
 
 				<div class="modimagen" style="border-top-color: transparent;">
-					<img src="./images/logo-white.png" alt="Logo" class="logo" style="max-width: 70%;">
+					<img src="images/logo-white.png" alt="Logo" class="logo" style="max-width: 70%;">
 					<!-- Ajusta el tamaño según necesites -->
 				</div>
 			</div>
@@ -91,268 +91,141 @@
 	</div>
 </div>
 
-<!-- asesor -->
 
-<section class="ultimas-propiedades  bio px-5">
-	<div class="text-center mx-auto" style="max-width: 1400px;">
-		<h2 class="section-title">Asesores</h2>
-		<div class="line"></div>
-		<div class="container-fluid px-0">
-			<div class="row g-5">
-
-				<!-- Asesor 1 -->
-				<div class="col-12 col-sm-6 col-md-4 col-lg-3">
-					<div class="card position-relative">
-						<div class="card-body bio">
-							<div class="advisor mt-2 w-100">
-								<img src="./images/asesor1.png
-                                    " class="advisor1-img" alt="Asesor">
-							</div>
-
-							<p class="text-center larger mt-2 mx-auto "
-							   style="color: #03669c; max-width: 200px; font-weight: 700;">María Nicolle Sanchéz
-								Bocanegra</p>
-							<div class="advisor mt-2 w-100 mb-3">
-								<a href="https://wa.me/123456789" target="_blank" aria-label="WhatsApp">
-									<img src="./images/Whatsapp.svg" class="ico" alt="WhatsApp"
-										 style="padding-left: 10px;">
-								</a>
-								<a href="mailto:example@example.com" target="_blank" aria-label="Email">
-									<img src="./images/Email.svg" class="ico" alt="Email" style="padding-left: 10px;">
-								</a>
-								<a href="tel:+123456789" target="_blank" aria-label="Celular">
-									<img src="./images/cel.svg" class="ico" alt="Celular" style="padding-left: 10px;">
-								</a>
-							</div>
-							<div class="d-flex">
-								<img src="./images/emailplomo.svg" class="icon" alt="Email"
-									 style="width: 30px !important;">
-								<p class="text-center font-weight-light" style="color: #999;">
-									nicollesb@eligedonde.com</p>
-							</div>
-							<div class="d-flex">
-								<img src="./images/llamadagray.svg" class="icon" alt="cel">
-								<p class="text-center font-weight-light" style="color: #999;">9823665090</p>
-							</div>
-							<div class="d-flex">
-								<img src="./images/ubicacion.svg" class="icon" alt="cel"
-									 style="width: 40px !important;">
-								<p class="font-weight-light" style="color: #999; text-align: start;">Asoc. San Francisco
-									Mz. 116 Lt. 01 esquina Av. Municipal c/ Calle Los Álamos - Distr. Gregorio
-									Albarracín Lanchipa, Tacna, Peru
-								</p>
-							</div>
-
-							<button class="btnaz mt-3 w-100">Ver propiedades</button>
-
+<section id="contact" class="px-4 px-md-5 pb-5" style="padding-top: 130px">
+	<div class="container-fluid px-0 mx-auto" style="max-width: 1400px;">
+		<div class="row g-5">
+			<div class="col-12 col-md-5">
+				<div class="rounded-5 p-5" style="background-color: #92CCF0">
+					<h2 class="fw-extrabold" style="color: #0F5F9C;">
+						Contáctanos en:
+					</h2>
+					<div class="d-flex align-items-center my-4">
+						<div>
+							<img src="icons/direccion.svg" alt="" width="30" style="margin-right: 5px;">
+						</div>
+						<div class="ps-4">
+							<h3 class="fw-extrabold fs-5 mb-1" style="color: #12609D;">
+								Dirección
+							</h3>
+							<p class="fs-5 mb-0 text-dark">
+								Av. Alfredo Benavides 768, interior 604, Miraflores, Lima - Perú
+							</p>
 						</div>
 					</div>
-
+					<div class="d-flex align-items-center my-4">
+						<div>
+							<img src="icons/celular.svg" alt="" width="35">
+						</div>
+						<div class="ps-4">
+							<h3 class="fw-extrabold fs-5 mb-1" style="color: #12609D;">
+								N° de celular
+							</h3>
+							<p class="fs-5 mb-0 text-dark">
+								932 329 579
+							</p>
+						</div>
+					</div>
+					<div class="d-flex align-items-center my-4">
+						<div>
+							<img src="icons/correo.svg" alt="" width="35">
+						</div>
+						<div class="ps-4">
+							<h3 class="fw-extrabold fs-5 mb-1" style="color: #12609D;">
+								Correo
+							</h3>
+							<p class="fs-5 mb-0 text-dark">
+								contacto@diphasac.com
+							</p>
+						</div>
+					</div>
 				</div>
-				<!-- Asesor 2 -->
-				<div class="col-12 col-sm-6 col-md-4 col-lg-3">
-					<div class="card position-relative">
-						<div class="card-body bio">
-							<div class="advisor mt-2 w-100">
-								<img src="./images/asesor2.png" class="advisor1-img" alt="Asesor">
+			</div>
+			<div class="col-12 col-md-7">
+				<h2 class="fw-semibold" style="max-width: 400px; color: #92CCF0;">
+					<span class="text-primary">Escríbenos aquí</span><br>
+					<span class="text-secondary fw-extrabold fs-1">tu consulta</span>
+				</h2>
+				<div class="mt-4">
+					<form class="consulta-box" id="contactForm" enctype="multipart/form-data" required>
+						<div class="container-fluid px-0">
+							<div class="row g-4">
+								<div class="col-12 col-sm-6">
+									<div class="form-floating">
+										<input type="text" class="form-control" id="fullName" name="full_name"
+											   placeholder="Nombre y Apellido" required>
+										<label for="fullName">Nombre Completo:</label>
+									</div>
+								</div>
+								<div class="col-12 col-sm-6">
+									<div class="form-floating">
+										<input type="text" class="form-control" id="documentId" name="document_id"
+											   placeholder="DNI" required>
+										<label for="documentId">Documento de Identidad:</label>
+									</div>
+								</div>
+								<div class="col-12 col-sm-6">
+									<div class="form-floating">
+										<input type="text" class="form-control" id="cellphoneNumber"
+											   name="cellphone_number" placeholder="Celular" required>
+										<label for="cellphoneNumber">Número de Celular:</label>
+									</div>
+								</div>
+								<div class="col-12 col-sm-6">
+									<div class="form-floating">
+										<input type="email" class="form-control" id="email" name="email"
+											   placeholder="Correo electrónico" required>
+										<label for="email">Email:</label>
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="form-floating">
+										<input type="text" class="form-control" id="subject" name="subject"
+											   placeholder="Tipo de consulta" required>
+										<label for="subject" class="form-label">Tipo de consulta</label>
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="form-floating">
+                                            <textarea class="form-control" placeholder="Escribe aquí tus comentarios..."
+													  id="comment" name="comment" style="height: 100px"
+													  required></textarea>
+										<label for="comment" class="form-label">Escribe aquí tus
+											comentarios...</label>
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="form-check">
+										<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+										<label class="form-check-label fs-5" for="flexCheckDefault">
+											He leído y autorizo el tratamiento de mis datos personales de acuerdo a la
+											<a class="fw-semibold text-primary" target="_blank"
+											   href="">
+												“Política de Tratamiento de Datos Personales”
+											</a>
+										</label>
+									</div>
+								</div>
+								<div class="text-end">
+									<button type="submit" class="btn btn-primary btn-lg rounded-pill px-5" id="submitBtn" disabled>
+										Enviar
+									</button>
+								</div>
 							</div>
-
-							<p class="text-center larger mt-2 mx-auto "
-							   style="color: #03669c; max-width: 200px; font-weight: 700;">Sergio Suarez Benavides</p>
-							<div class="advisor mt-2 w-100 mb-3">
-								<a href="https://wa.me/123456789" target="_blank" aria-label="WhatsApp">
-									<img src="./images/Whatsapp.svg" class="ico" alt="WhatsApp"
-										 style="padding-left: 10px;">
-								</a>
-								<a href="mailto:example@example.com" target="_blank" aria-label="Email">
-									<img src="./images/Email.svg" class="ico" alt="Email" style="padding-left: 10px;">
-								</a>
-								<a href="tel:+123456789" target="_blank" aria-label="Celular">
-									<img src="./images/cel.svg" class="ico" alt="Celular" style="padding-left: 10px;">
-								</a>
-							</div>
-							<div class="d-flex">
-								<img src="./images/emailplomo.svg" class="icon" alt="Email"
-									 style="width: 30px !important;">
-								<p class="text-center font-weight-light" style="color: #999;">sergios@eligedonde.com</p>
-							</div>
-							<div class="d-flex">
-								<img src="./images/llamadagray.svg" class="icon" alt="cel">
-								<p class="text-center font-weight-light" style="color: #999;">9823665090</p>
-							</div>
-							<div class="d-flex">
-								<img src="./images/ubicacion.svg" class="icon" alt="cel">
-								<p class="font-weight-light" style="color: #999; text-align: start;">Asoc. San Francisco
-									Mz. 116 Lt. 01 esquina Av. Municipal c/ Calle Los Álamos - Distr. Gregorio
-									Albarracín Lanchipa, Tacna, Peru
-								</p>
-							</div>
-
-							<button class="btnaz mt-3 w-100">Ver propiedades</button>
-
 						</div>
-					</div>
-
+					</form>
 				</div>
-
-				<!-- Asesor 3-->
-				<div class="col-12 col-sm-6 col-md-4 col-lg-3">
-					<div class="card position-relative">
-						<div class="card-body bio">
-							<div class="advisor mt-2 w-100">
-								<img src="./images/asesor3.jpg" class="advisor1-img" alt="Asesor">
-							</div>
-
-							<p class="text-center larger mt-2 mx-auto "
-							   style="color: #03669c; max-width: 200px; font-weight: 700;">Fernanda Flor Romero
-								Gallardo</p>
-							<div class="advisor mt-2 w-100 mb-3">
-								<a href="https://wa.me/123456789" target="_blank" aria-label="WhatsApp">
-									<img src="./images/Whatsapp.svg" class="ico" alt="WhatsApp"
-										 style="padding-left: 10px;">
-								</a>
-								<a href="mailto:example@example.com" target="_blank" aria-label="Email">
-									<img src="./images/Email.svg" class="ico" alt="Email" style="padding-left: 10px;">
-								</a>
-								<a href="tel:+123456789" target="_blank" aria-label="Celular">
-									<img src="./images/cel.svg" class="ico" alt="Celular" style="padding-left: 10px;">
-								</a>
-							</div>
-							<div class="d-flex">
-								<img src="./images/emailplomo.svg" class="icon" alt="Email"
-									 style="width: 30px !important;">
-								<p class="text-center font-weight-light" style="color: #999;">ferflor@eligedonde.com</p>
-							</div>
-							<div class="d-flex">
-								<img src="./images/llamadagray.svg" class="icon" alt="cel">
-								<p class="text-center font-weight-light" style="color: #999;">9823665098</p>
-							</div>
-							<div class="d-flex">
-								<img src="./images/ubicacion.svg" class="icon" alt="cel">
-								<p class="font-weight-light" style="color: #999; text-align: start;">Asoc. San Francisco
-									Mz. 116 Lt. 01 esquina Av. Municipal c/ Calle Los Álamos - Distr. Gregorio
-									Albarracín Lanchipa, Tacna, Peru
-								</p>
-							</div>
-
-							<button class="btnaz mt-3 w-100">Ver propiedades</button>
-
-						</div>
-					</div>
-
-				</div>
-
-				<!-- Asesor 4 -->
-				<div class="col-12 col-sm-6 col-md-4 col-lg-3">
-					<div class="card position-relative">
-						<div class="card-body bio">
-							<div class="advisor mt-2 w-100">
-								<img src="./images/asesor4.jpg" class="advisor1-img" alt="Asesor">
-							</div>
-
-							<p class="text-center larger mt-2 mx-auto "
-							   style="color: #03669c; max-width: 200px; font-weight: 700;">Georga Traverso Torres</p>
-							<div class="advisor mt-2 w-100 mb-3">
-								<a href="https://wa.me/123456789" target="_blank" aria-label="WhatsApp">
-									<img src="./images/Whatsapp.svg" class="ico" alt="WhatsApp"
-										 style="padding-left: 10px;">
-								</a>
-								<a href="mailto:example@example.com" target="_blank" aria-label="Email">
-									<img src="./images/Email.svg" class="ico" alt="Email" style="padding-left: 10px;">
-								</a>
-								<a href="tel:+123456789" target="_blank" aria-label="Celular">
-									<img src="./images/cel.svg" class="ico" alt="Celular" style="padding-left: 10px;">
-								</a>
-							</div>
-							<div class="d-flex">
-								<img src="./images/emailplomo.svg" class="icon" alt="Email"
-									 style="width: 30px !important;">
-								<p class="text-center font-weight-light" style="color: #999; ">
-									GeorgaT@eligedonde.com</p>
-							</div>
-							<div class="d-flex">
-								<img src="./images/llamadagray.svg" class="icon" alt="cel">
-								<p class="text-center font-weight-light" style="color: #999;">9823665090</p>
-							</div>
-							<div class="d-flex">
-								<img src="./images/ubicacion.svg" class="icon" alt="cel">
-								<p class="font-weight-light" style="color: #999; text-align: start;">Asoc. San Francisco
-									Mz. 116 Lt. 01 esquina Av. Municipal c/ Calle Los Álamos - Distr. Gregorio
-									Albarracín Lanchipa, Tacna, Peru
-								</p>
-							</div>
-
-							<button class="btnaz mt-3 w-100">Ver propiedades</button>
-
-						</div>
-					</div>
-
+				<div class="message">
+					<h4>Tu consulta ha sido enviada exitosamente. Nos pondremos en contacto contigo pronto.</h4>
 				</div>
 			</div>
 		</div>
+
 	</div>
 </section>
 
 
-<script>
-  function selectOption(option) {
-    const details = {
-      "Caracteristicas generales": ["Terraza", "Seguridad", "Caseta de Guardia"],
-      "Servicios": ["Luz", "Agua"],
-      "Ambientes": ["Dormitorio", "Baño", "Cocina"],
-      "Exteriores": ["Cochera", "Patio"]
-    };
-
-    // Mostrar línea seleccionada
-    const line = document.getElementById('selectedLine');
-    line.style.display = 'block';
-
-    // Actualizar el texto de detalles
-    const detailsDiv = document.getElementById('details');
-    detailsDiv.innerHTML = `<ul>${details[option].map(item => `<li>${item}</li>`).join('')}</ul>`;
-
-    // Actualizar la clase activa
-    const links = document.querySelectorAll('.nav-link');
-    links.forEach(link => {
-      link.classList.remove('active');
-    });
-
-    // Establecer la clase activa en el botón seleccionado
-    const activeLink = Array.from(links).find(link => link.textContent.trim() === option);
-    if (activeLink) {
-      activeLink.classList.add('active');
-    }
-  }
-
-  function setModalImage(src) {
-    const modalBody = document.querySelector('#imageModal .carousel-inner');
-
-    // Limpiar los elementos existentes en el carrusel
-    modalBody.innerHTML = '';
-
-    // Lista de imágenes
-    const images = [
-      './images/tacna-inmueble1.png',
-      './images/tacna-inmueble2.png',
-      './images/tacna-inmueble3.png',
-      './images/tacna-inmueble4.png',
-      './images/tacna-inmueble5.png'
-    ];
-
-    // Agregar las imágenes al carrusel
-    images.forEach((image, index) => {
-      const item = document.createElement('div');
-      item.className = `carousel-item ${index === 0 ? 'active' : ''}`;
-      item.innerHTML = `<img src="${image}" class="d-block w-100" alt="Imagen ${index + 1}">`;
-      modalBody.appendChild(item);
-    });
-  }
-</script>
-</section>
-
 <!-- Foooter -->
-
-
 <section style="background-color:  #03669c;">
 	<div class="ventas-section" style="max-width: 1400px; text-align: start; ">
 		<div class="column col-lg-4 col-md-6 col-12 text-white smaller" style="text-align: start; ">
